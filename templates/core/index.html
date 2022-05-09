@@ -199,7 +199,7 @@
                             </div>
                         </div>-->
 
-                        <a href="about.html" class="filled-button mt-4">Voir toutes les solutions</a>
+                        <a href="{% url 'solutions' %}" class="filled-button mt-4">Voir toutes les solutions</a>
                     </div>
                 </div>
 
@@ -232,7 +232,7 @@
                             <div class="row">
                                 <div class="col-md-6  order-md-1 order-2 align-self-center">
                                     <div class="right-content">
-                                        <h2 class="text-right">FINANCE DIGITALE</h2>
+                                        <h2 class="text-md-right text-left mt-md-0 mt-3">FINANCE DIGITALE</h2>
                                         <p class="text-justify">Nous offrons des solutions de finance digitale adaptées
                                             aux
                                             réalités de l’Afrique afin de
@@ -246,7 +246,7 @@
                                             enim maxime, nisi. Aliquam blanditiis, dolore ducimus eum iusto laudantium
                                             officiis omnis pariatur perferendis recusandae repudiandae, sapiente ut?</p>
 
-                                        <a href="#" class="my-4 border-button float-md-right">Nos solutions de Finance
+                                        <a href="{% url 'solutions' %}#products" class="my-4 border-button float-md-right">Nos solutions de Finance
                                             digitale</a>
                                     </div>
                                 </div>
@@ -293,7 +293,7 @@
                                 </div>
                                 <div class="col-md-6 order-md-2  order-2 align-self-center">
                                     <div class="right-content">
-                                        <h2 class="text-left">DATA MANAGEMENT</h2>
+                                        <h2 class="text-left mt-md-0 mt-3">DATA MANAGEMENT</h2>
                                         <p class="text-justify">Nous élaborons et exécutons une stratégie de Data
                                             Management qui
                                             sécurise vos données
@@ -320,7 +320,7 @@
                                             </div>
                                         </div>
 
-                                        <a href="#" class="my-4 filled-button">Notre Plateforme</a>
+                                        <a href="{% url 'solutions' %}" class="my-4 filled-button">Notre Plateforme</a>
 
                                         <!--<div class="row">
                                             <div class="col-12 col-md-6">
@@ -348,18 +348,12 @@
         <div class="more-info about-info expertise mt-0 section-light-green">
             <div class="container">
                 <div class="row">
-                    <!--<div class="col-md-12">
-                      <div class="section-heading">
-                        <h2 class="text-left">Nos <em>Expertises</em></h2>
-                        <span class="text-left">Aliquam id urna imperdiet libero mollis hendrerit</span>
-                      </div>
-                    </div>-->
                     <div class="col-md-12 mt-5">
                         <div class="more-info-content">
                             <div class="row">
                                 <div class="col-md-6 order-md-1  order-2 align-self-center">
                                     <div class="right-content">
-                                        <h2 class="text-right">CYBER SECURITE</h2>
+                                        <h2 class="text-md-right text-left mt-md-0 mt-3">CYBER SECURITE</h2>
                                         <p class="text-justify">BFT Group vous aide à mettre en place des programmes de
                                             cyber
                                             sécurité adaptés à vos
@@ -436,27 +430,7 @@
                                 <!-- End Blockquote -->
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="text-center rounded-2 p-4 p-md-7"
-                                 style="background-color: #2f3945; color: #fff;">
-                                <img class="avatar avatar-lg avatar-4x3 mx-auto mb-4" style="height: 100px; width: auto"
-                                     src="http://127.0.0.1:5500/assets/images/patners/laposte.png" alt="SVG Logo">
-
-                                <!-- Blockquote -->
-                                <figure class="w-md-80 w-lg-50 mx-md-auto">
-                                    <blockquote class="blockquote">With Front, we're able to easily track our
-                                        performance in full detail. It's become an essential tool for us to grow and
-                                        engage with our audience.
-                                    </blockquote>
-
-                                    <figcaption class="blockquote-footer">
-                                        Christina Kray
-                                        <span class="blockquote-footer-source">Social Media Executive, Mailchimp</span>
-                                    </figcaption>
-                                </figure>
-                                <!-- End Blockquote -->
-                            </div>
-                        </div>
+                        
                     </div>
 
                     <div class="swiper-pagination"></div>
@@ -476,7 +450,7 @@
 
 
     <section class="row g-0 more-info" style="margin: 80px 0">
-        <div class="col-md-6 bg-size-cover py-7"
+        <div class="col-md-6 bg-size-cover py-0"
              style="background: url({% static 'images/more-info.jpg' %}) no-repeat center; background-size: cover; min-height: 600px !important;">
             <div class="py-6"></div>
         </div>
@@ -509,7 +483,7 @@
                         Pour y parvenir, nous organisons notre culture d’entreprise autour de cinq valeurs
                         fondamentales à savoir : la Passion, l’Innovation, l’Esprit d’équipe, la Qualité et
                         l’Ethique.</p>
-                    <a href="about.html" class="filled-button">En savoir plus</a>
+                    <a href="{% url 'about' %}" class="filled-button">En savoir plus</a>
                 </div>
             </div>
         </div>

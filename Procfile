@@ -1,2 +1,2 @@
-web: gunicorn beninfintech.wsgi:application
+web: gunicorn config.wsgi:application
 

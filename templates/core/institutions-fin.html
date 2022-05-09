@@ -1,0 +1,444 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block custom_style %}
+    <style>
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        @media (max-width: 465px) {
+            .swiper-slide {
+                width: 100% !important;
+            }
+        }
+
+    </style>
+{% endblock %}
+
+{% block content %}
+
+    <div class="page-heading header-text"
+         style="padding-top: 150px !important;background: linear-gradient(-180deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url(https://res.cloudinary.com/aime/image/upload/v1651741632/VISITE_DE_LA_COOP%C3%89RATION_SUISSE_ET_DE_LA_CIF_-_KING_ART_EMPIRE_-_17_f%C3%A9vrier_2022_-_18_aczz4s.jpg) center; background-size: cover;">
+        <div class="container">
+            <div class="row">
+                <div class="mini-header col-md-12 d-flex align-items-center justify-content-start align-self-center text-center">
+                </div>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 align-self-center">
+                    <div class="section-header mb-4 mt-0">
+                        <h2>BFT pour les <span> IMF</span></h2>
+                    </div>
+
+                    <p>
+                        Nous offrons aux Institutions de Micro finance diverses prestations dont notamment:
+                    </p>
+                    <ul class="body-ul text-left">
+                        <li>La digitalisation des processus de collecte de l’épargne/tontine</li>
+                        <li>La digitalisation des processus de demande et de suivi du crédit adossé à l’épargne</li>
+                        <li>La digitalisation des processus de demande et de suivi du crédit agri</li>
+                        <li>La mise en place et le déploiement de réseaux d’agents</li>
+                        <li>Les services Financiers Mobiles</li>
+                        <li>La fiabilisation de Base de données et du KYC</li>
+                        <li>La mise en place de portails décisionnels, etc.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 align-self-center">
+                    <div class="d-flex flex-wrap">
+                        <img src="{% static 'images/imf.svg' %}"
+                             style=" max-width: 100%; max-height: 100%;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-part">
+        <div class="container">
+            <div class="row">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="service-item">
+                                <img src="{% static 'images/patners/Fececam-logo.png' %}" class="mb-2"
+                                     alt="" style="max-width: auto; max-height: 100px;">
+                                <div class="down-content">
+                                    <h4>FECECAM</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae doloremque hic odit porro sequi unde!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="service-item">
+                                <img src="{% static 'images/patners/fucec-togo.png' %}" class="mb-2"
+                                     style="max-width: auto; max-height: 100px;" alt="">
+                                <div class="down-content">
+                                    <h4>FUCEC TOGO</h4>
+                                    <p>La FUCEC Togo est la faitière d'un réseau de 37 mutuelles coopératives.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="service-item">
+                                <img src="{% static 'images/patners/pebco.png' %}" class="mb-2"
+                                     style="max-width: auto; max-height: 100px;"
+                                     alt="">
+                                <div class="down-content">
+                                    <h4>PEBCO BETHESDA</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus eos error fuga quisquam ut veniam?</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+{% comment %}
+                <div class="col-md-4">
+                    <div class="service-item">
+                        <img src="{% static 'images/patners/Fececam-logo.png' %}" class="mb-2"
+                             alt="" width="50">
+                        <div class="down-content">
+                            <h4>FECECAM</h4>
+                            <p>Instution de Microfinance qui a pour mission d'améliorer les conditions de
+                                vie des
+                                sociétaires tout en visant la rentabilité des caisses et la pérennité du
+                                réseau.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-item">
+                        <img src="{% static 'images/patners/fucec-togo.png' %}" class="mb-2"
+                             style="max-width: auto; max-height: 100px;" alt="">
+                        <div class="down-content">
+                            <h4>FUCEC TOGO</h4>
+                            <p>La FUCEC Togo est la faitière d'un réseau de 37 mutuelles coopératives.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-item">
+                        <img src="{% static 'images/patners/pebco.png' %}" class="mb-2"
+                             style="max-width: auto; max-height: 100px;"
+                             alt="">
+                        <div class="down-content">
+                            <h4>PEBCO BETHESDA</h4>
+                            <p>PEBCo-BETHESA a pour mission “d’améliorer les conditions de vie des
+                                populations pauvres
+                                en
+                                leur offrant des services financiers et non financiers solidaires de
+                                qualité” </p>
+                        </div>
+                    </div>
+                </div>
+{% endcomment %}
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section style="background: #2f3945; color: #fff;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 align-self-center">
+                    <div class="d-flex flex-wrap">
+                        <img src="{% static 'images/imf.svg' %}"
+                             style=" max-width: 100%; max-height: 100%;" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 align-self-center">
+                    <div class="section-header mb-4 mt-0">
+                        <h2>BFT pour les <br><span> Banques Postales</span></h2>
+                    </div>
+
+                    <p class="text-white">
+                        Nous offrons aux Institutions de Micro finance diverses prestations dont notamment:
+                    </p>
+                    <ul class="body-ul text-left">
+                        <li>La digitalisation des processus de collecte de l’épargne/tontine</li>
+                        <li>La digitalisation des processus de demande et de suivi du crédit adossé à l’épargne</li>
+                        <li>La digitalisation des processus de demande et de suivi du crédit agri</li>
+                        <li>La mise en place et le déploiement de réseaux d’agents</li>
+                        <li>Les services Financiers Mobiles</li>
+                        <li>La fiabilisation de Base de données et du KYC</li>
+                        <li>La mise en place de portails décisionnels, etc.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <section class="section-part">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+
+                    <div class="col-md-4 mb-2">
+                        <div class="service-item">
+                            <img src="{% static 'images/patners/laposte.png' %}" class="mb-2"
+                                 style="max-width: auto; max-height: 100px;" alt="">
+                            <div class="down-content">
+                                <h4>LA POSTE BENIN</h4>
+                                <p>Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus
+                                    dignissim. Nunc
+                                    ornare
+                                    leo tortor.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-item">
+                            <img src="{% static 'images/patners/la_poste_togo.jpg' %}" class="mb-2"
+                                 style=" max-width: auto; max-height: 100px;" alt="">
+                            <div class="down-content">
+                                <h4>LA POSTE TOGO</h4>
+                                <p>Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus
+                                    dignissim. Nunc
+                                    ornare
+                                    leo tortor.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </section>
+    </section>
+
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 align-self-center">
+                    <div class="section-header mb-4 mt-0">
+                        <h2>BFT pour les <br><span> Sociétés d'Assurance</span></h2>
+                    </div>
+
+                    <p>
+                        Nous offrons aux Institutions de Micro finance diverses prestations dont notamment:
+                    </p>
+                    <ul class="body-ul text-left">
+                        <li>La digitalisation des processus de collecte de l’épargne/tontine</li>
+                        <li>La digitalisation des processus de demande et de suivi du crédit adossé à l’épargne</li>
+                        <li>La digitalisation des processus de demande et de suivi du crédit agri</li>
+                        <li>La mise en place et le déploiement de réseaux d’agents</li>
+                        <li>Les services Financiers Mobiles</li>
+                        <li>La fiabilisation de Base de données et du KYC</li>
+                        <li>La mise en place de portails décisionnels, etc.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 align-self-center">
+                    <div class="d-flex flex-wrap">
+                        <img src="{% static 'images/assurances.svg' %}"
+                             style=" max-width: 100%; max-height: 100%;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-part">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6">
+                    <div class="service-item">
+                        <img src="{% static 'images/patners/atlantique-assurance.png' %}" class="mb-2"
+                             style="max-width: auto; max-height: 100px;" alt="">
+                        <div class="down-content">
+                            <h4>ATLANTIQUE ASSURANCES Bénin</h4>
+                            <p>Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare
+                                leo
+                                tortor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section style="background: #f9f9f9">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 align-self-center">
+                    <div class="d-flex flex-wrap">
+                        <img src="{% static 'images/imf.svg' %}"
+                             style=" max-width: 100%; max-height: 100%;" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 align-self-center">
+                    <div class="section-header mb-4 mt-0">
+                        <h2>BFT pour les <br><span> Régies Financières</span></h2>
+                    </div>
+
+                    <p>
+                        Nous offrons aux Institutions de Micro finance diverses prestations dont notamment:
+                    </p>
+                    <ul class="body-ul text-left">
+                        <li>La digitalisation des processus de collecte de l’épargne/tontine</li>
+                        <li>La digitalisation des processus de demande et de suivi du crédit adossé à l’épargne</li>
+                        <li>La digitalisation des processus de demande et de suivi du crédit agri</li>
+                        <li>La mise en place et le déploiement de réseaux d’agents</li>
+                        <li>Les services Financiers Mobiles</li>
+                        <li>La fiabilisation de Base de données et du KYC</li>
+                        <li>La mise en place de portails décisionnels, etc.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <section class="section-part">
+            <div class="container">
+                <div class="row d-flex flex-wrap justify-content-center">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="service-item">
+                                    <img src="{% static 'images/patners/Fececam-logo.png' %}" class="mb-2"
+                                         style="max-width: auto; max-height: 100px;" alt="">
+                                    <div class="down-content">
+                                        <h4>SOGEMA</h4>
+                                        <p>Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim.
+                                            Nunc
+                                            ornare
+                                            leo tortor.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="service-item">
+                                    <img src="{% static 'images/patners/fucec-togo.png' %}" class="mb-2"
+                                         style="max-width: auto; max-height: 100px;" alt="">
+                                    <div class="down-content">
+                                        <h4>EPAM TOGO</h4>
+                                        <p>Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim.
+                                            Nunc
+                                            ornare
+                                            leo tortor.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="service-item">
+                                    <img src="{% static 'images/patners/pebco.png' %}" class="mb-2"
+                                         style="max-width: auto; max-height: 100px;" alt="">
+                                    <div class="down-content">
+                                        <h4>Commune de Goma</h4>
+                                        <p>Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim.
+                                            Nunc
+                                            ornare
+                                            leo tortor.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="service-item">
+                                    <img src="{% static 'images/patners/pebco.png' %}" class="mb-2"
+                                         style="max-width: auto; max-height: 100px;" alt="">
+                                    <div class="down-content">
+                                        <h4>Commune V de Bamako</h4>
+                                        <p>Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim.
+                                            Nunc
+                                            ornare
+                                            leo tortor.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="service-item">
+                                    <img src="{% static 'images/patners/pebco.png' %}" class="mb-2"
+                                         style="max-width: auto; max-height: 100px;" alt="">
+                                    <div class="down-content">
+                                        <h4>Mairie Abomey Calavi</h4>
+                                        <p>Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim.
+                                            Nunc
+                                            ornare
+                                            leo tortor.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <div class="request-form">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h4>Request a call back right now ?</h4>
+            <span>Mauris ut dapibus velit cras interdum nisl ac urna tempor mollis.</span>
+          </div>
+          <div class="col-md-4">
+            <a href="contact.html" class="border-button">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+{% endblock %}
+
+{% block swiper %}
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 50,
+                },
+            },
+
+        });
+    </script>
+{% endblock %}

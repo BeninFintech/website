@@ -1,0 +1,536 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block custom_style %}
+    <style>
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .swiper-pagination-bullet {
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            line-height: 20px;
+            font-size: 12px;
+            color: #000;
+            opacity: 1;
+            background: rgba(0, 0, 0, 0.2);
+            top: 30px !important;
+        }
+
+        .swiper-pagination-bullet-active {
+            color: #fff;
+            background: #007aff;
+        }
+
+        .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+            position: relative !important;
+            margin-top: 30px !important;
+        }
+
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class="main-banner header-text" id="top">
+        <div class="Modern-Slider">
+            <!-- Item -->
+            <div class="item item-1">
+                <div class="img-fill">
+                    <div class="overslide"></div>
+                    <div class="text-content">
+                        <!--                   <h6>we are ready to help you</h6>
+                         --> <h4>Digitalisation <br>des processus et <br> services financiers</h4>
+                        <p>Nous accompagnons nos partenaires dans la digitalisation de leur processus afin de les aider
+                            à
+                            offrir à leurs clients, <br>une expérience adaptée à l’ère du numérique.</p>
+                        <a href="contact.html" class="filled-button">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <!-- // Item -->
+            <!-- Item -->
+            <div class="item item-2">
+                <div class="img-fill">
+                    <div class="overslide"></div>
+                    <div class="text-content">
+                        <!--                   <h6>we are here to support you</h6>
+                         --> <h4>Sécurisation de <br> la collecte des <br>recettes.</h4>
+                        <p>La solution de réseau d’agents proposé par BFT permet aux prestataires de services
+                            financiers d’accélérer leur croissance et à moindre coût.</p>
+                        <a href="plateform.html" class="filled-button">Nos Services</a>
+                    </div>
+                </div>
+            </div>
+            <!-- // Item -->
+            <!-- Item -->
+            <div class="item item-3">
+                <div class="img-fill">
+                    <div class="overslide"></div>
+                    <div class="text-content">
+                        <!--                   <h6>we have a solid background</h6>
+                         --> <h4>Réseaux d'Agents <br>Bancaires</h4>
+                        <p>La digitalisation de plus en plus poussée des produits et services financiers, le mobile
+                            money et
+                            le mobile micro finance ont changé l’expérience client. Nous desservons le dernier kilomètre
+                            qui mène au dernier client potentiel.</p>
+                        <a href="about.html" class="filled-button">Nos services</a>
+                    </div>
+                </div>
+            </div>
+            <!-- // Item -->
+        </div>
+    </div>
+
+    <!-- ======= Counts Section ======= -->
+    <div class="fun-facts counts-bar pt-0 mb-0"
+         style="background: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(https://res.cloudinary.com/aime/image/upload/v1651586463/4907157_c92lcq.jpg) no-repeat fixed !important; background-size: cover; margin-top: 100px; padding: 80px 0 !important">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 align-self-center">
+                    <div class="row">
+                        <a href="#" class="col-xl-3 col-lg-6 col-md-6 col-sm-6 mb-2">
+                            <div class="count-digit-area-content">
+                                <i class="fa fa-users"></i>
+                                <div class="count-digit">87.885</div>
+                                <div class="count-digit-title h6">Utilisateurs satisfaits</div>
+                            </div>
+                        </a>
+                        <a href="#" class="col-xl-3 col-lg-6 col-md-6 col-sm-6 mb-2">
+                            <div class="count-digit-area-content">
+                                <i class="fa fa-piggy-bank"></i>
+                                <div class="count-digit">38 Milliards</div>
+                                <div class="count-digit-title">d'Épargnes collectés</div>
+                            </div>
+                        </a>
+                        <a href="#" class="col-xl-3 col-lg-6 col-md-6 col-sm-6 mb-2">
+                            <div class="count-digit-area-content">
+                                <i class="fa fa-credit-card"></i>
+                                <div class="count-digit">3 Milliards</div>
+                                <div class="count-digit-title"> de Crédits octroyés</div>
+                            </div>
+                        </a>
+                        <a href="#" class="col-xl-3 col-lg-6 col-md-6 col-sm-6 mb-2">
+                            <div class="count-digit-area-content">
+                                <i class="fa fa-headset"></i>
+                                <div class="count-digit">48080</div>
+                                <div class="count-digit-title">Heures de Support</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="solutions-section pt-0">
+        <div class="container">
+            <div class="row solutions-grid">
+                <div class="col-12 col-md-6">
+                    <div class="ms-sm-4 my-2 py-5 my-sm-0 py-sm-6 py-md-7" style="max-width: 495px;">
+                        <div class="section-header mb-4 mt-0">
+                            <h2>Nos Solutions <span> Fintech</span></h2>
+                        </div>
+
+                        <p class="mb-4" style="font-weight: 300;font-size: 18px;line-height: 2rem;text-align: justify;">
+                            Nous avons un pack de solution pour la numérisation de tous les
+                            processus de gestion de l’épargne et de la tontine. Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Accusantium, beatae ducimus earum esse facilis saepe.
+                        </p>
+
+                        <div class="d-flex align-items-start mb-grid-gutter">
+                            {% comment %}
+                            <img
+                                src="https://res.cloudinary.com/aime/image/upload/v1651605898/ss_y24cmh.png" alt="Hotel"
+                                width="47">
+{% endcomment %}
+                            <div class="">
+                                <h3 class="h6 mb-2">Smart Saving</h3>
+                                <p class="fs-sm mb-0">Save not only on airline tickets, but also on accommodation.</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start mb-grid-gutter my-4">
+                            {% comment %}
+                            <img
+                                src="https://res.cloudinary.com/aime/image/upload/v1651605898/sc_fevq34.png" alt="Hotel"
+                                width="47">
+{% endcomment %}
+                            <div class="">
+                                <h3 class="h6 mb-2">Smart Credit</h3>
+                                <p class="fs-sm mb-0">Save not only on airline tickets, but also on accommodation.</p>
+                            </div>
+                        </div>
+
+                        <!--<div class="d-flex align-items-start mb-grid-gutter"><img src="https://res.cloudinary.com/aime/image/upload/v1651605898/sp_qjil3h.png" alt="Hotel" width="47">
+                            <div class="ps-4">
+                                <h3 class="h6 mb-2">Smart Pay</h3>
+                                <p class="fs-sm mb-0">Save not only on airline tickets, but also on accommodation.</p>
+                            </div>
+                        </div>-->
+
+                        <a href="about.html" class="filled-button mt-4">Voir toutes les solutions</a>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6" style="display: flex; justify-content: center; align-items: center;">
+                    <img class="" src="https://res.cloudinary.com/aime/image/upload/v1651854067/SMART_BFT_CORE-09_sxtrhi.png"
+                         style="max-width:100%; max-height: auto;" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="pt-0 mt-0">
+        <div class="section-header mb-4 text-center">
+            <h2>Nos <span> Expertises</span></h2>
+        </div>
+
+        <div class="more-info about-info expertise mt-0">
+            <div class="container">
+                <div class="row">
+                    <!--<div class="col-md-12">
+                      <div class="section-heading">
+                        <h2 class="text-left">Nos <em>Expertises</em></h2>
+                        <span class="text-left">Aliquam id urna imperdiet libero mollis hendrerit</span>
+                      </div>
+                    </div>-->
+                    <div class="col-md-12 mb-5">
+                        <div class="more-info-content">
+                            <div class="row">
+                                <div class="col-md-6  order-md-1 order-2 align-self-center">
+                                    <div class="right-content">
+                                        <h2 class="text-right">FINANCE DIGITALE</h2>
+                                        <p class="text-justify">Nous offrons des solutions de finance digitale adaptées
+                                            aux
+                                            réalités de l’Afrique afin de
+                                            favoriser l’inclusion financière des populations jusqu’alors exclues.</p>
+                                        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                            elit. Ab
+                                            accusamus aliquam at beatae blanditiis culpa dolor doloribus dolorum, error
+                                            eveniet
+                                            ex incidunt ipsa itaque minus molestiae mollitia nostrum. Lorem ipsum dolor
+                                            sit amet, consectetur adipisicing elit. Adipisci consectetur cumque ducimus
+                                            enim maxime, nisi. Aliquam blanditiis, dolore ducimus eum iusto laudantium
+                                            officiis omnis pariatur perferendis recusandae repudiandae, sapiente ut?</p>
+
+                                        <a href="#" class="my-4 border-button float-md-right">Nos solutions de Finance
+                                            digitale</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 order-md-2  order-1 align-self-center mt-5">
+                                    <div class="left-image">
+                                        <img class="img-fluid"
+                                             src="https://res.cloudinary.com/aime/image/upload/v1651219986/Collect-Payments-for-Multiple-Channels-1.1_thugya.gif"
+                                             alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="more-info about-info section-bg-dark expertise mt-0">
+            <div class="container">
+                <div class="row">
+                    <!--<div class="col-md-12">
+                      <div class="section-heading">
+                        <h2 class="text-left">Nos <em>Expertises</em></h2>
+                        <span class="text-left">Aliquam id urna imperdiet libero mollis hendrerit</span>
+                      </div>
+                    </div>-->
+                    <div class="col-md-12 mb-5 mt-5">
+                        <div class="more-info-content">
+                            <div class="row">
+                                <div class="col-md-6 order-md-1  order-1">
+                                    <div class="d-flex justify-content-center left-image">
+                                        <div class="row">
+                                            <div class="col-12">
+
+                                                <img src="https://www.bpcbt.com/hubfs/Images%20-%20Themes/Header/bcp-digital-header-1024x640.jpg"
+                                                     alt="">
+                                            </div>
+                                            <div class="col-12">
+
+                                                <img src="assets/images/about-3.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 order-md-2  order-2 align-self-center">
+                                    <div class="right-content">
+                                        <h2 class="text-left">DATA MANAGEMENT</h2>
+                                        <p class="text-justify">Nous élaborons et exécutons une stratégie de Data
+                                            Management qui
+                                            sécurise vos données
+                                            et
+                                            permet d'améliorer l'efficacité opérationnelle de votre institution et la
+                                            prise de
+                                            meilleures
+                                            décisions.</p>
+
+                                        <div class="row">
+                                            <div class="col-12 col-md-6">
+                                                <h5><i class="fa fa-chevron-circle-right" style="color: #80c45a"></i>
+                                                    Data Analysis</h5>
+                                                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur
+                                                    adipisicing
+                                                    elit. Obcaecati, placeat.</p>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <h5><i class="fa fa-chevron-circle-right" style="color: #80c45a"></i>
+                                                    Data Prediction</h5>
+                                                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur
+                                                    adipisicing
+                                                    elit. Consectetur, quidem.</p>
+                                            </div>
+                                        </div>
+
+                                        <a href="#" class="my-4 filled-button">Notre Plateforme</a>
+
+                                        <!--<div class="row">
+                                            <div class="col-12 col-md-6">
+                                                <h5><i class="fa fa-arrow-right"></i> Data Prediction</h5>
+                                                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                                    elit. Obcaecati, placeat.</p>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <h5><i class="fa fa-arrow-right"></i> Data Prediction</h5>
+                                                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                                    elit. Consectetur, quidem.</p>
+                                            </div>
+                                        </div>-->
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="more-info about-info expertise mt-0 section-light-green">
+            <div class="container">
+                <div class="row">
+                    <!--<div class="col-md-12">
+                      <div class="section-heading">
+                        <h2 class="text-left">Nos <em>Expertises</em></h2>
+                        <span class="text-left">Aliquam id urna imperdiet libero mollis hendrerit</span>
+                      </div>
+                    </div>-->
+                    <div class="col-md-12 mt-5">
+                        <div class="more-info-content">
+                            <div class="row">
+                                <div class="col-md-6 order-md-1  order-2 align-self-center">
+                                    <div class="right-content">
+                                        <h2 class="text-right">CYBER SECURITE</h2>
+                                        <p class="text-justify">BFT Group vous aide à mettre en place des programmes de
+                                            cyber
+                                            sécurité adaptés à vos
+                                            exigences et à vos risques en analysant votre modèle d'entreprise.</p>
+                                        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                            elit. Ab
+                                            accusamus aliquam at beatae blanditiis culpa dolor doloribus dolorum, error
+                                            eveniet
+                                            ex incidunt ipsa itaque minus molestiae mollitia nostrum.</p>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6 order-md-2  order-1">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="https://www.bpcbt.com/hubfs/Images%20-%20Themes/Phones/bpc-mobility_iphone.jpg"
+                                             alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="overflow-hidden" style="margin-top: 80px;">
+        <div class="container content-space-b-2">
+            <div class="position-relative">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="text-center rounded-2 p-4 p-md-7"
+                                 style="background-color: #2f3945; color: #fff;">
+                                <img class="avatar avatar-lg avatar-4x3 mx-auto mb-4" style="height: 100px; width: auto"
+                                     src="{% static 'images/patners/laposte.png' %}" alt="SVG Logo">
+
+                                <!-- Blockquote -->
+                                <figure class="w-md-80 w-lg-50 mx-md-auto">
+                                    <blockquote class="blockquote">With Front, we're able to easily track our
+                                        performance in full detail. It's become an essential tool for us to grow and
+                                        engage with our audience.
+                                    </blockquote>
+
+                                    <figcaption class="blockquote-footer font-weight-bold text-white">
+                                        Christina Kray
+                                        <span class="blockquote-footer-source">Social Media Executive, Mailchimp</span>
+                                    </figcaption>
+                                </figure>
+                                <!-- End Blockquote -->
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="text-center rounded-2 p-4 p-md-7"
+                                 style="background-color: #2f3945; color: #fff;">
+                                <img class="avatar avatar-lg avatar-4x3 mx-auto mb-4" style="height: 100px; width: auto"
+                                     src="{% static 'images/patners/Fececam-logo.png' %}" alt="SVG Logo">
+
+                                <!-- Blockquote -->
+                                <figure class="w-md-80 w-lg-50 mx-md-auto">
+                                    <blockquote class="blockquote">With Front, we're able to easily track our
+                                        performance in full detail. It's become an essential tool for us to grow and
+                                        engage with our audience.
+                                    </blockquote>
+
+                                    <figcaption class="blockquote-footer">
+                                        Christina Kray
+                                        <span class="blockquote-footer-source">Social Media Executive, Mailchimp</span>
+                                    </figcaption>
+                                </figure>
+                                <!-- End Blockquote -->
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="text-center rounded-2 p-4 p-md-7"
+                                 style="background-color: #2f3945; color: #fff;">
+                                <img class="avatar avatar-lg avatar-4x3 mx-auto mb-4" style="height: 100px; width: auto"
+                                     src="http://127.0.0.1:5500/assets/images/patners/laposte.png" alt="SVG Logo">
+
+                                <!-- Blockquote -->
+                                <figure class="w-md-80 w-lg-50 mx-md-auto">
+                                    <blockquote class="blockquote">With Front, we're able to easily track our
+                                        performance in full detail. It's become an essential tool for us to grow and
+                                        engage with our audience.
+                                    </blockquote>
+
+                                    <figcaption class="blockquote-footer">
+                                        Christina Kray
+                                        <span class="blockquote-footer-source">Social Media Executive, Mailchimp</span>
+                                    </figcaption>
+                                </figure>
+                                <!-- End Blockquote -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+
+
+                <!-- SVG Shape -->
+                <!--<div class="position-absolute bottom-0 start-0 w-100" style="max-width: 7rem;margin-bottom: -45px !important;margin-left: -45px !important">
+                    <div class="mb-n7 ms-n7" style="">
+                        <img class="img-fluid" src="https://htmlstream.com/preview/front-v4.2/html/assets/svg/components/dots.svg" alt="Image Description">
+                    </div>
+                </div>-->
+                <!-- End SVG Shape -->
+            </div>
+        </div>
+    </div>
+
+
+    <section class="row g-0 more-info" style="margin: 80px 0">
+        <div class="col-md-6 bg-size-cover py-7"
+             style="background: url({% static 'images/more-info.jpg' %}) no-repeat center; background-size: cover; min-height: 600px !important;">
+            <div class="py-6"></div>
+        </div>
+        <div class="col-md-6 more-info-content border-top border-bottom px-3 pe-xl-0 ps-lg-5 ps-xl-7">
+            <div class="ms-sm-4 my-2 py-5 my-sm-0 py-sm-6 py-md-7" style="">
+                <div class="right-content">
+                    <span>À PROPOS</span>
+                    <h2>BFT Group <br><em> QUI SOMMES NOUS ? </em></h2>
+                    <p>Banking and Financial Technology Group (BFT Group) est une fintech panafricaine créée
+                        en
+                        2017 suite à la rencontre de trois jeunes africains, désireux chacun d’oeuvrer à
+                        l’inclusion
+                        financière des populations de leur continent.
+                        L'objet de BFT au Bénin et à l’étranger est le développement des solutions
+                        technologiques dans
+                        les secteurs de la finance digitale, la monétique, le data management, la cyber
+                        sécurité et du
+                        paiement électronique. La conception et le développement d’applications et de
+                        plateformes
+                        technologiques pour les institutions financières. Et en général, la prestation de
+                        tous services de
+                        vente, de création, d’hébergement, de référencement et d’audits en systèmes et
+                        logiciels
+                        informatiques.<br><br>
+                        Notre mission est de fournir à nos clients des solutions technologiques adaptées aux
+                        réalités de
+                        l’Afrique afin d’améliorer l’accès des populations aux services financiers et de
+                        contribuer au
+                        développement des communautés.
+                        Pour y parvenir, nous organisons notre culture d’entreprise autour de cinq valeurs
+                        fondamentales à savoir : la Passion, l’Innovation, l’Esprit d’équipe, la Qualité et
+                        l’Ethique.</p>
+                    <a href="about.html" class="filled-button">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+{% endblock %}
+
+{% block swiper %}
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+{% endblock %}
+
+

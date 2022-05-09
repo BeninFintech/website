@@ -1,0 +1,524 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Manrope:100,200,300,400,500,600,700,800,900&display=swap"
+          rel="stylesheet">
+
+    <title>BFT | Solutions de Finance Digitale pour l'Afrique</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    {% comment %}
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+{% endcomment %}
+    <link rel="stylesheet" href="{% static 'css/templatemo-finance-business.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.css' %}">
+
+    <!-- Font Awesome -->
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+            rel="stylesheet"
+    />
+
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <script defer src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js"></script>
+
+    <style>
+        .dropbtn {
+            font-size: 15px !important;
+            cursor: pointer;
+        }
+
+        .dropbtn:hover {
+            background-color: transparent !important;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #ffffff;
+            width: 300px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* .dropdown-content a:hover {background-color: #f1f1f1;} */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #ffffff;
+        }
+
+
+    </style>
+
+    {% block custom_style %}
+
+    {% endblock %}
+</head>
+
+<body>
+
+{% comment %}
+<div id="preloader">
+    <div class="jumper">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+{% endcomment %}
+
+<!-- *******Collapse Sidebar elements ******** -->
+<div id="sidebar" class="sidebar">
+    <div class="sidebar-header p-0">
+        <div class="sidebar-header-top">
+            <a class="" href="index.html"><img class="navbar-brand logo" src="assets/images/logo.jpg" alt=""></a>
+            <a href="javascript:void(0)" id="closebtn" class="closebtn" style="" onclick="closeNav()"><i
+                    class="fab fa-times" style="font-weight: 100;"></i></a>
+        </div>
+
+
+    </div>
+
+    <div><a href="index.html"> <i class="fab fa-home"></i> Accueil</a></div>
+
+
+    <div id="accordion">
+        <a type="button" class="collapse-btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+           aria-controls="collapseOne">
+            Que faisons nous?
+        </a>
+        <div id="collapseOne" class="collapse m-0" aria-labelledby="headingOne" data-parent="#accordion">
+            <ul id="sidebar-drop-content">
+                <li>Technologies Financières</li>
+                <li><a href="plateform.html"> Notre Plateforme</a></li>
+                <li><a href="materials.html"> Matériels & Consommables</a></li>
+                <li>Services</li>
+                <li><a href="services.html"> Déploiement & Support</a></li>
+                <li><a href="services.html#monitoring-cybersecurity"> Monitoring & Cybersécurité</a></li>
+                <li><a href="services.html#technical-assistance"> Assistance Technique</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="accordion">
+        <a type="button" class="collapse-btn" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+           aria-controls="collapseOne">
+            Institutions Financières
+        </a>
+        <div id="collapseTwo" class="collapse m-0" aria-labelledby="headingOne" data-parent="#accordion">
+            <ul id="sidebar-drop-content">
+                <li><a href="institutions-fin.html"> Institutions de Microfinance</a></li>
+                <li><a href="postal-banks.html"> Banques Postales</a></li>
+                <li><a href="assurances.html"> Sociétés d'Assurances</a></li>
+                <li><a href="regies.html"> Régies Financières</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="accordion">
+        <a type="button" class="collapse-btn" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true"
+           aria-controls="collapseThree">
+            À Propos
+        </a>
+        <div id="collapseThree" class="collapse m-0" aria-labelledby="headingOne" data-parent="#accordion">
+            <ul id="sidebar-drop-content">
+                <li><a href="about.html#story">Notre Histoire</a></li>
+                <li><a href="#"> Mission - Vision - Valeurs</a></li>
+                <li><a href="#"> Notre Équipe</a></li>
+                <li><a href="#"> Nos Partenaires</a></li>
+                <li><a href="#"> Politique et Engagement</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div style="position:absolute; bottom: 5px; background-color: #fff;">
+        <ul>
+            <li><a href="#"> contact@bftgroup.co</a></li>
+            <br>
+            <span class="d-flex justify-content-between">
+              <li><a href="#"> <i class="fab fa-facebook"></i></a></li>
+              <li><a href="#"> <i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"> <i class="fab fa-linkedin"></i></a></li>
+
+            </span>
+        </ul>
+    </div>
+
+</div>
+
+<div onclick="closeNav()" id="overlay"></div>
+
+<script>
+    function openNav() {
+        document.getElementById("sidebar").style.width = "300px";
+        document.querySelector('body').style.overflow = "hidden";
+        document.getElementById("overlay").style.display = "block";
+        document.getElementById("closebtn").style.visibility = "visible";
+        document.getElementById("opensidebarbtn").style.display = "none";
+
+    }
+
+    function closeNav() {
+        document.getElementById("sidebar").style.width = "0";
+        document.querySelector('body').style.overflow = "initial";
+        document.getElementById("overlay").style.display = "none";
+        document.getElementById("closebtn").style.visibility = "hidden";
+        document.getElementById("opensidebarbtn").style.display = "block";
+    }
+</script>
+<!-- *********End of Collapse Sidebar******** -->
+
+
+<!-- Header -->
+{% comment %}
+<div class="sub-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1 col-xs-12">
+                <!-- <ul class="left-info">
+                  <li><a href="#"><i class="fab fa-clock-o"></i>Mon-Fri 09:00-17:00</a></li>
+                  <li><a href="#"><i class="fab fa-phone"></i>090-080-0760</a></li>
+                </ul> -->
+            </div>
+            <div class="col-md-11 d-flex justify-content-end">
+                <ul class="left-info">
+                    <!--               <li><a href="#"><i class="fab fa-clock-o"></i>Mon-Fri 09:00-17:00</a></li>
+                     -->
+                    <li><a href="contact.html"> Contact</a></li>
+                </ul>
+                <ul class="right-icons">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endcomment %}
+
+
+<header class="">
+    <nav class="navbar navbar-expand-lg" style="box-shadow: unset;">
+        <div class="container">
+            <a class="" href="{% url 'home' %}"><img class="navbar-brand logo"
+                                                     src="https://res.cloudinary.com/aime/image/upload/v1651855501/logo-BFT-Version-couleur-original-PNG_m7i6bm.png"
+                                                     alt=""></a>
+            <button id="opensidebarbtn" class="navbar-toggler" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                    role="button"
+                    aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link dropbtn" href="{% url 'home' %}">Accueil<br>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropbtn" type="button">Que faisons nous?</a>
+                        <div class="dropdown-content">
+                            <div class="rowi">
+                                <div class="col-md-12 columni">
+                                    <a href="{% url 'solutions' %}">Nos Solutions</a>
+                                    <a href="{% url 'materials' %}">Matériels & Consommables</a>
+                                    <a href="{% url 'support' %}">Nos services</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropbtn" href="{% url 'institutions' %}">Institutions Financières
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropbtn" href="{% url 'about' %}">À Propos</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropbtn" href="{% url 'contact' %}">Contact</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                      <a class="nav-link" href="plateform.html">Réalisations</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact</a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+{% block content %}
+
+{% endblock %}
+<div class="offcanvas offcanvas-start" tabindex="99999" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+        <a class="" href="{% url 'home' %}"><img class="navbar-brand logo"
+                                                 src="https://res.cloudinary.com/aime/image/upload/v1651855501/logo-BFT-Version-couleur-original-PNG_m7i6bm.png"
+                                                 alt=""></a>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="{% url 'home' %}">Accueil</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                   aria-expanded="false">Que faisons nous ?</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="{% url 'solutions' %}">Nos solutions</a></li>
+                    <li><a class="dropdown-item" href="{% url 'materials' %}">Materiels & Consommables</a></li>
+                    <li><a class="dropdown-item" href="{% url 'support' %}">Nos services</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'institutions' %}">Institutions financières</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'about' %}">À Propos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+{% comment %}<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 footer-item">
+                <h4>BFT Group SAS</h4>
+                <p>Vivamus tellus mi. Nulla ne cursus elit,vulputate. Sed ne cursus augue hasellus lacinia sapien
+                    vitae.</p>
+                <ul class="social-icons">
+                    <li><a rel="nofollow" href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 footer-item">
+                <h4>Accès rapide</h4>
+                <ul class="menu-list">
+                    <li><a href="#">Vivamus ut tellus mi</a></li>
+                    <li><a href="#">Nulla nec cursus elit</a></li>
+                    <li><a href="#">Vulputate sed nec</a></li>
+                    <li><a href="#">Cursus augue hasellus</a></li>
+                    <li><a href="#">Lacinia ac sapien</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-6 footer-item last-item">
+                <h4>Contact</h4>
+                <div class="contact-form">
+                    <form id="contact footer-contact" action="" method="post">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <fieldset>
+                                    <input name="name" type="text" class="form-control" id="name" placeholder="Nom"
+                                           required="">
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <fieldset>
+                                    <input name="email" type="email" class="form-control" id="email"
+                                           pattern="[^ @]*@[^ @]*" placeholder="E-Mail" required="">
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                                <fieldset>
+                                    <textarea name="message" rows="6" class="form-control" id="message"
+                                              placeholder="Message" required=""></textarea>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                                <fieldset>
+                                    <a type="submit" id="form-submit" class="filled-button">Envoyer</a>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>{% endcomment %}
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 footer-item">
+                <h4>BENIN FINTECH</h4>
+                <p>Vivamus tellus mi. Nulla ne cursus elit,vulputate. Sed ne cursus augue hasellus lacinia sapien
+                    vitae.</p>
+                <ul class="social-icons">
+                    <li><a rel="nofollow" href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 footer-item">
+                <h4>Accès rapide</h4>
+                <ul class="menu-list">
+                    <li><a href="{% url 'solutions' %}">Nos solutions</a></li>
+                    <li><a href="{% url 'materials' %}">Materiels & Consommables</a></li>
+                    <li><a href="{% url 'support' %}">Nos services</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 footer-item">
+                <h4>Accès rapide</h4>
+                <ul class="menu-list">
+                    <li><a href="#">Vivamus ut tellus mi</a></li>
+                    <li><a href="#">Nulla nec cursus elit</a></li>
+                    <li><a href="#">Vulputate sed nec</a></li>
+                    <li><a href="#">Cursus augue hasellus</a></li>
+                    <li><a href="#">Lacinia ac sapien</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 footer-item">
+                <h4>Accès rapide</h4>
+                <ul class="menu-list">
+                    <li><a href="#">Vivamus ut tellus mi</a></li>
+                    <li><a href="#">Nulla nec cursus elit</a></li>
+                    <li><a href="#">Vulputate sed nec</a></li>
+                    <li><a href="#">Cursus augue hasellus</a></li>
+                    <li><a href="#">Lacinia ac sapien</a></li>
+                </ul>
+            </div>
+
+            {% comment %}
+            <div class="col-md-6 footer-item last-item">
+                <h4>Contact</h4>
+                <div class="contact-form">
+                    <form id="contact footer-contact" action="" method="post">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <fieldset>
+                                    <input name="name" type="text" class="form-control" id="name" placeholder="Nom"
+                                           required="">
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <fieldset>
+                                    <input name="email" type="email" class="form-control" id="email"
+                                           pattern="[^ @]*@[^ @]*" placeholder="E-Mail" required="">
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                                <fieldset>
+                                    <textarea name="message" rows="6" class="form-control" id="message"
+                                              placeholder="Message" required=""></textarea>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                                <fieldset>
+                                    <a type="submit" id="form-submit" class="filled-button">Envoyer</a>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+{% endcomment %}
+        </div>
+    </div>
+</footer>
+
+<div class="sub-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p></p>
+                <p>Copyright &copy; 2021 BFT Group</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+<!-- <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+
+
+<!-- MDB -->
+<script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"
+></script>
+
+<!-- Additional Scripts -->
+<script src="{% static 'js/custom.js' %}"></script>
+<script src="{% static 'js/owl.js' %}"></script>
+<script src="{% static 'js/slick.js' %}"></script>
+<script src="{% static 'js/accordions.js' %}"></script>
+
+<script language="text/Javascript">
+    cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+    function clearField(t) {                   //declaring the array outside of the
+        if (!cleared[t.id]) {                      // function makes it static and global
+            cleared[t.id] = 1;  // you could use true and false, but that's more typing
+            t.value = '';         // with more chance of typos
+            t.style.color = '#fff';
+        }
+    }
+</script>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+{% block swiper %}
+
+{% endblock %}
+
+{% block custom_js %}
+
+{% endblock %}
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

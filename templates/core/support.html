@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="page-heading header-text" style="padding-top: 150px !important;background: linear-gradient(-180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(https://res.cloudinary.com/aime/image/upload/v1651678720/SERVICE_SUPPORT_-_04_mai_2022_-_16_osulkg.jpg) center; background-size: cover;">
+      <div class="container">
+        <div class="row">
+          <div class="mini-header col-md-12 d-flex align-items-center justify-content-center align-self-center text-center">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 align-self-center">
+            <div class="section-header mb-4 mt-0">
+              <h2>Déploiement & <span> Support</span></h2>
+            </div>
+
+            <p>
+              Nous déployons pour nos partenaires une Plateforme sécurisée, taillée sur la mesure de leurs besoins et modifiable selon les évolutions du marché. Une fois la plateforme déployée, nous nous assurons d'être permanemment aux côtés du Partenaire à travers un service de support technique totalement orientée satisfaction du client et fonctionnel 24h/24.
+            </p>
+          </div>
+          <div class="col-md-6 align-self-center">
+            <div class="left-image">
+              <img src="{% static 'images/about-3.jpg' %}" style="max-width: 100%; max-height: 100%;" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <div id="monitoring-cybersecurity" class="fun-facts m-0" style="background: #2f3945; color: #fff !important;">
+      <div class="container">
+        <div class="align-self-center">
+          <div class="row">
+            <div class="col-md-6 align-self-center">
+                <div class="section-heading">
+                  <h2>Monitoring & <em>Cybersécurité</em></h2>
+                  <p class="text-justify">Le PCI DSS ne laisse aucun doute quant à la nécessité d'établir des réseaux sécurisés pour aboutir à la conformité. Aussi, la première exigence stipule que pour être conforme, une organisation doit mettre en place un réseau sécurisé et en assurer la pérennité ; Pour héberger la plateforme SMARTBFT CORE sur AWS, nous avons opté pour une architecture 3-tiers de référence. Elle se présente en trois (03) couches cloisonnées par des contrôles d’accès à savoir : la couche bastion, la couche serveur d’application, la couche base de données.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 align-self-center">
+              <div class="row">
+
+                <div class="col-6 text-center d-flex justify-content-around align-items-center">
+                  <div class="special-card">
+                    <img src="{%  static 'images/web-app.svg' %}" class="mb-2" style="max-width: auto; max-height: 80px;" alt="">
+                    <h6>La couche <br> bastion</h6>
+                  </div>
+                </div>
+
+                <div class="col-6 text-center  d-flex justify-content-around align-items-center">
+                  <div class="special-card">
+                    <img src="{% static 'images/mobile.svg' %}" class="mb-2" style="max-width: auto; max-height: 100px;" alt="">
+                    <h6>La couche serveur d’application</h6>
+                  </div>
+                </div>
+
+                <div class="col-6 mt-2 text-center  d-flex justify-content-around align-items-center">
+                  <div class="special-card">
+                    <img src="{% static 'images/server-app.svg' %}" class="mb-2" style="max-width: auto; max-height: 100px;" alt="">
+                    <h6>La couche de bases de données</h6>
+                  </div>
+                </div>
+
+                <div class="col-6 mt-2 text-center d-flex justify-content-around align-items-center">
+                  <div class="special-card">
+                    <img src="{% static 'images/api-composante.svg' %}" class="mb-2" style="max-width: auto; max-height: 100px;" alt="">
+                    <h6>Réplication <br> inter-sites</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <section id="technical-assistance" class="row g-0" style="margin: 80px 0">
+      <div class="col-md-6 bg-size-cover py-7"
+           style="background: url(https://res.cloudinary.com/aime/image/upload/v1651680021/SERVICE_SUPPORT_-_04_mai_2022_-_4_uyk684.jpg) no-repeat center; background-size: cover; min-height: 200px !important;">
+        <div class="py-6"></div>
+      </div>
+      <div class="col-md-6 border-top border-bottom px-3 pe-xl-0 ps-lg-5 ps-xl-7">
+        <div class="ms-sm-4 my-2 py-5 my-sm-0 py-sm-6 py-md-7" style="max-width: 495px;">
+          <div class="section-header mb-4 mt-0">
+            <h2>Assistance <span> Technique</span></h2>
+          </div>
+
+          <p>
+            Nous accompagnons nos Partenaires dans chaque étape de leur processus que ce soit dans l’accomplissement d’une tâche intellectuelle (conseils, suivi,…) ou matérielle (maintenance) et, s’ils le souhaitent, jusqu’au transfert de compétences à travers une démarche personnalisée et simplifiée.
+          </p>
+
+          <a href="about.html" class="filled-button mt-4">Découvrir notre mission</a>
+        </div>
+      </div>
+    </section>
+
+{% endblock %}

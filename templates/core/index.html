@@ -112,8 +112,7 @@
     </div>
 
     <!-- ======= Counts Section ======= -->
-    <div class="fun-facts counts-bar pt-0 mb-0"
-         style="background: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(https://res.cloudinary.com/aime/image/upload/v1651586463/4907157_c92lcq.jpg) no-repeat fixed !important; background-size: cover; margin-top: 100px; padding: 80px 0 !important">
+    <div class="counts-bar pt-0 mb-0">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 align-self-center">
@@ -156,38 +155,28 @@
     <section class="solutions-section pt-0">
         <div class="container">
             <div class="row solutions-grid">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 d-flex align-items-center">
                     <div class="ms-sm-4 my-2 py-5 my-sm-0 py-sm-6 py-md-7" style="max-width: 495px;">
                         <div class="section-header mb-4 mt-0">
                             <h2>Nos Solutions <span> Fintech</span></h2>
                         </div>
 
-                        <p class="mb-4" style="font-weight: 300;font-size: 18px;line-height: 2rem;text-align: justify;">
+                        <p class="mb-4 solutions-text">
                             Nous avons un pack de solution pour la numérisation de tous les
                             processus de gestion de l’épargne et de la tontine. Lorem ipsum dolor sit amet, consectetur
                             adipisicing elit. Accusantium, beatae ducimus earum esse facilis saepe.
                         </p>
 
                         <div class="d-flex align-items-start mb-grid-gutter">
-                            {% comment %}
-                            <img
-                                src="https://res.cloudinary.com/aime/image/upload/v1651605898/ss_y24cmh.png" alt="Hotel"
-                                width="47">
-{% endcomment %}
                             <div class="">
-                                <h3 class="h6 mb-2">Smart Saving</h3>
+                                <h3 class="h6 mb-2"><i class="fa fa-chevron-circle-right" style="color: #80c45a"></i> Smart Saving</h3>
                                 <p class="fs-sm mb-0">Save not only on airline tickets, but also on accommodation.</p>
                             </div>
                         </div>
 
                         <div class="d-flex align-items-start mb-grid-gutter my-4">
-                            {% comment %}
-                            <img
-                                src="https://res.cloudinary.com/aime/image/upload/v1651605898/sc_fevq34.png" alt="Hotel"
-                                width="47">
-{% endcomment %}
                             <div class="">
-                                <h3 class="h6 mb-2">Smart Credit</h3>
+                                <h3 class="h6 mb-2"><i class="fa fa-chevron-circle-right" style="color: #80c45a"></i> Smart Credit</h3>
                                 <p class="fs-sm mb-0">Save not only on airline tickets, but also on accommodation.</p>
                             </div>
                         </div>
@@ -204,8 +193,8 @@
                 </div>
 
 
-                <div class="col-12 col-md-6" style="display: flex; justify-content: center; align-items: center;">
-                    <img class="" src="https://res.cloudinary.com/aime/image/upload/v1652122691/SMART_BFT_CORE-09_1_fukspx.png"
+                <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+                    <img class="" src="https://res.cloudinary.com/aime/image/upload/v1652172695/72ppp_SMART_BFT_COREXTra-09-11-11_e8agwa.png"
                          style="max-width:100%; max-height: auto;" alt="">
                 </div>
             </div>
@@ -221,12 +210,6 @@
         <div class="more-info about-info expertise mt-0">
             <div class="container">
                 <div class="row">
-                    <!--<div class="col-md-12">
-                      <div class="section-heading">
-                        <h2 class="text-left">Nos <em>Expertises</em></h2>
-                        <span class="text-left">Aliquam id urna imperdiet libero mollis hendrerit</span>
-                      </div>
-                    </div>-->
                     <div class="col-md-12 mb-5">
                         <div class="more-info-content">
                             <div class="row">
@@ -267,12 +250,6 @@
         <div class="more-info about-info section-bg-dark expertise mt-0">
             <div class="container">
                 <div class="row">
-                    <!--<div class="col-md-12">
-                      <div class="section-heading">
-                        <h2 class="text-left">Nos <em>Expertises</em></h2>
-                        <span class="text-left">Aliquam id urna imperdiet libero mollis hendrerit</span>
-                      </div>
-                    </div>-->
                     <div class="col-md-12 mb-5 mt-5">
                         <div class="more-info-content">
                             <div class="row">
@@ -286,7 +263,7 @@
                                             </div>
                                             <div class="col-12">
 
-                                                <img src="assets/images/about-3.jpg" alt="">
+                                                <img src="{% static 'images/about-3.jpg' %}" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -321,19 +298,6 @@
                                         </div>
 
                                         <a href="{% url 'solutions' %}" class="my-4 filled-button">Notre Plateforme</a>
-
-                                        <!--<div class="row">
-                                            <div class="col-12 col-md-6">
-                                                <h5><i class="fa fa-arrow-right"></i> Data Prediction</h5>
-                                                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                                    elit. Obcaecati, placeat.</p>
-                                            </div>
-                                            <div class="col-12 col-md-6">
-                                                <h5><i class="fa fa-arrow-right"></i> Data Prediction</h5>
-                                                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                                    elit. Consectetur, quidem.</p>
-                                            </div>
-                                        </div>-->
 
                                     </div>
                                 </div>
@@ -450,8 +414,7 @@
 
 
     <section class="row g-0 more-info" style="margin: 80px 0">
-        <div class="col-md-6 bg-size-cover py-0"
-             style="background: url({% static 'images/more-info.jpg' %}) no-repeat center; background-size: cover; min-height: 600px !important;">
+        <div class="col-md-6 bg-size-cover py-0 about-section">
             <div class="py-6"></div>
         </div>
         <div class="col-md-6 more-info-content border-top border-bottom px-3 pe-xl-0 ps-lg-5 ps-xl-7">

@@ -843,6 +843,18 @@ ul.slick-dots {
     margin-top: 60px;
 }
 
+.solutions-grid h3 {
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.solutions-text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 2rem;
+    text-align: justify;
+}
+
 @media (max-width: 992px) {
     /*.solutions-grid .bg-white-on-mobile {
         background-color: #fff !important;
@@ -979,7 +991,10 @@ section .solutions-grid .btn-light:hover {
 
 .counts-bar {
     box-shadow: 6px 5px 6px rgba(0, 0, 0, 0.04);
-    background: #ffffff !important;
+    background: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(https://res.cloudinary.com/aime/image/upload/v1651586463/4907157_c92lcq.jpg) no-repeat fixed !important;
+    background-size: cover !important;
+    margin-top: 100px !important;
+    padding: 80px 0 !important
 }
 
 .count-digit {
@@ -1104,6 +1119,12 @@ section .solutions-grid .btn-light:hover {
     margin-bottom: 30px;
     color: #fff;
     text-align: justify;
+}
+
+.about-section {
+    background: url(/static/images/more-info.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 600px !important;
 }
 
 

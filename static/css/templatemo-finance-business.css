@@ -570,7 +570,9 @@ ul.slick-dots {
     font-weight: 700;
     /*letter-spacing: 1px;*/
     color: #80c45a;
+    /*
     animation: fadeOutRight 1s both;
+    */
 }
 
 .Modern-Slider .item h4 {
@@ -581,7 +583,9 @@ ul.slick-dots {
     /*letter-spacing: 2.5px;*/
     color: #FFF;
     overflow: hidden;
-    animation: fadeOutLeft 1s both;
+    /*
+    animation: fadeOutLeft 0.5s both;
+    */
 }
 
 .Modern-Slider .item p {
@@ -598,11 +602,13 @@ ul.slick-dots {
 }
 
 .Modern-Slider .item.slick-active h6 {
+    /*
     animation: fadeInDown 1s both 1s;
+    */
 }
 
 .Modern-Slider .item.slick-active h4 {
-    animation: fadeInLeft 1s both 1.5s;
+    animation: fadeInLeft 0.5s both 0.5s;
 }
 
 .Modern-Slider .item.slick-active {

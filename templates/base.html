@@ -400,11 +400,6 @@
                 <h4>BENIN FINTECH</h4>
                 <p>Vivamus tellus mi. Nulla ne cursus elit,vulputate. Sed ne cursus augue hasellus lacinia sapien
                     vitae.</p>
-                <ul class="social-icons">
-                    <li><a rel="nofollow" href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                </ul>
             </div>
             <div class=" col- 6 col-md-3 footer-item">
                 <h4>Accès rapide</h4>
@@ -414,61 +409,67 @@
                     <li><a href="{% url 'support' %}">Nos services</a></li>
                 </ul>
             </div>
-            <div class="col-6 col-md-3 footer-item">
-                <h4>Accès rapide</h4>
-                <ul class="menu-list">
-                    <li><a href="#">Vivamus ut tellus mi</a></li>
-                    <li><a href="#">Nulla nec cursus elit</a></li>
-                    <li><a href="#">Vulputate sed nec</a></li>
-                    <li><a href="#">Cursus augue hasellus</a></li>
-                    <li><a href="#">Lacinia ac sapien</a></li>
-                </ul>
-            </div>
-            <div class="col-6 col-md-3 footer-item">
-                <h4>Accès rapide</h4>
-                <ul class="menu-list">
-                    <li><a href="#">Vivamus ut tellus mi</a></li>
-                    <li><a href="#">Nulla nec cursus elit</a></li>
-                    <li><a href="#">Vulputate sed nec</a></li>
-                    <li><a href="#">Cursus augue hasellus</a></li>
-                    <li><a href="#">Lacinia ac sapien</a></li>
-                </ul>
-            </div>
-
             {% comment %}
+            <div class="col-6 col-md-3 footer-item">
+                <h4>Accès rapide</h4>
+                <ul class="menu-list">
+                    <li><a href="#">Vivamus ut tellus mi</a></li>
+                    <li><a href="#">Nulla nec cursus elit</a></li>
+                    <li><a href="#">Vulputate sed nec</a></li>
+                    <li><a href="#">Cursus augue hasellus</a></li>
+                    <li><a href="#">Lacinia ac sapien</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-3 footer-item">
+                <h4>Accès rapide</h4>
+                <ul class="menu-list">
+                    <li><a href="#">Vivamus ut tellus mi</a></li>
+                    <li><a href="#">Nulla nec cursus elit</a></li>
+                    <li><a href="#">Vulputate sed nec</a></li>
+                    <li><a href="#">Cursus augue hasellus</a></li>
+                    <li><a href="#">Lacinia ac sapien</a></li>
+                </ul>
+            </div>
+{% endcomment %}
+
             <div class="col-md-6 footer-item last-item">
-                <h4>Contact</h4>
+                <h4>Newsletter</h4>
                 <div class="contact-form">
                     <form id="contact footer-contact" action="" method="post">
-                        <div class="row">
-                            <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="row d-flex align-items-center justify-content-center">
+                            {% comment %}<div class="col-lg-12 col-md-12 col-sm-12">
                                 <fieldset>
                                     <input name="name" type="text" class="form-control" id="name" placeholder="Nom"
                                            required="">
                                 </fieldset>
-                            </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12">
+                            </div>{% endcomment %}
+                            <div class="col-lg-10">
                                 <fieldset>
-                                    <input name="email" type="email" class="form-control" id="email"
+                                    <input name="email" type="email" class="form-control mb-0" id="email"
                                            pattern="[^ @]*@[^ @]*" placeholder="E-Mail" required="">
                                 </fieldset>
                             </div>
-                            <div class="col-lg-12">
+                            {% comment %}<div class="col-lg-12">
                                 <fieldset>
                                     <textarea name="message" rows="6" class="form-control" id="message"
                                               placeholder="Message" required=""></textarea>
                                 </fieldset>
-                            </div>
-                            <div class="col-lg-12">
-                                <fieldset>
-                                    <a type="submit" id="form-submit" class="filled-button">Envoyer</a>
-                                </fieldset>
+                            </div>{% endcomment %}
+                            <div class="col-lg-2">
+                                <a type="submit" id="form-submit" class=""><i class="fa-solid fa-paper-plane"></i></a>
                             </div>
                         </div>
                     </form>
+
+                    <ul class="social-icons">
+                        <li><a rel="nofollow" href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
                 </div>
             </div>
-{% endcomment %}
+
         </div>
     </div>
 </footer>

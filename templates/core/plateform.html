@@ -3,431 +3,563 @@
 
 {% block content %}
     <div class="page-heading header-text" style="padding-top: 150px !important;">
-      <div class="container">
-        <div class="row">
-          <div class="mini-header col-md-6 align-self-center">
-            <h1>Notre Plateforme <span>SmartBFT</span></h1>
-            <p>
-             SmartBFT Core est une plateforme multicanale de finance digitale qui permmet aux institutions financières, en fonction de leurs besoins, de digitaliser leurs processus, d'offrir des services financiers à distance et/ou d'offrir des services financiers numériques.
-            </p>
-          </div>
-          <div class="col-md-6 align-self-center">
-            <div class="left-image">
-              <img src="{% static 'images/about-3.jpg' %}" style="max-width: 100%; max-height: 100%;" alt="">
+        <div class="container">
+            <div class="row">
+                <div class="mini-header col-md-6 align-self-center">
+                    <h1>Notre Plateforme <span>SmartBFT</span></h1>
+                    <p>
+                        SmartBFT Core est une plateforme multicanale de finance digitale qui permmet aux institutions
+                        financières, en fonction de leurs besoins, de digitaliser leurs processus, d'offrir des services
+                        financiers à distance et/ou d'offrir des services financiers numériques.
+                    </p>
+                </div>
+                <div class="col-md-6 align-self-center">
+                    <div class="left-image">
+                        <img src="{% static 'images/about-3.jpg' %}" style="max-width: 100%; max-height: 100%;" alt="">
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
 
 
     <div class="fun-facts m-0">
-      <div class="container">
-        <div class="align-self-center">
-          <div class="row">
-            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 mt-2 text-center">
-              <img src="{% static 'images/web-app.svg' %}" class="mb-5" style="max-width: auto; max-height: 100px;" alt="">
-              <h6>Une Appli Web</h6>
-              <p>Une appliction déployée sur un terminal pour la gestion des opérations terrain</p>
+        <div class="container">
+            <div class="align-self-center">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 mt-2 text-center">
+                        <img src="{% static 'images/web-app.svg' %}" class="mb-5"
+                             style="max-width: auto; max-height: 100px;" alt="">
+                        <h6>Une Appli Web</h6>
+                        <p>Une appliction déployée sur un terminal pour la gestion des opérations terrain</p>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 mt-2 text-center">
+                        <img src="{% static 'images/mobile.svg' %}" class="mb-5"
+                             style="max-width: auto; max-height: 100px;" alt="">
+                        <h6>Une Appli Mobile</h6>
+                        <p>Une appliction déployée sur un terminal pour la gestion des opérations terrain</p>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 mt-2 text-center">
+                        <img src="{% static 'images/server-app.svg' %}" class="mb-5"
+                             style="max-width: auto; max-height: 100px;" alt="">
+                        <h6>Une Appli Serveur</h6>
+                        <p>Pour la gestion du back office accessible via un portail web</p>
+                    </div>
+
+
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 mt-2 text-center">
+                        <img src="{% static 'images/api-composante.svg' %}" class="mb-5"
+                             style="max-width: auto; max-height: 100px;" alt="">
+                        <h6>Une API</h6>
+                        <p>Pour l'interconnexion de la solution au SIG de l'Institution financière</p>
+                    </div>
+
+                </div>
             </div>
-
-            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 mt-2 text-center">
-              <img src="{% static 'images/mobile.svg' %}" class="mb-5" style="max-width: auto; max-height: 100px;" alt="">
-              <h6>Une Appli Mobile</h6>
-              <p>Une appliction déployée sur un terminal pour la gestion des opérations terrain</p>
-            </div>
-
-            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 mt-2 text-center">
-              <img src="{% static 'images/server-app.svg' %}" class="mb-5" style="max-width: auto; max-height: 100px;" alt="">
-              <h6>Une Appli Serveur</h6>
-              <p>Pour la gestion du back office accessible via un portail web</p>
-            </div>
-
-
-            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 mt-2 text-center">
-              <img src="{% static 'images/api-composante.svg' %}" class="mb-5" style="max-width: auto; max-height: 100px;" alt="">
-              <h6>Une API</h6>
-              <p>Pour l'interconnexion de la solution au SIG de l'Institution financière</p>
-            </div>
-
-          </div>
         </div>
-      </div>
     </div>
 
 
     <div id="products" class="services mt-0 pt-0">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-heading text-left">
-              <h2>Modules de <em>Solutions</em></h2>
-              <span>Aliquam id urna imperdiet libero mollis hendrerit</span>
-            </div>
-          </div>
-          <div class="col-12" x-data="dropdown">
-            <div class="row" x-show="! open">
-              <div class=" col-12 col-md-6 order-2 order-md-1" style="padding: 122px 79px !important; background-color: #F3F3F4;">
-                <div class="down-content">
-                  <h4 style="margin-bottom: 20px !important; font-weight: 700; font-size: 24px; line-height: 120%;">Smart Saving</h4>
-                  <p style="font-weight: 300;font-size: 16px !important;line-height: 140% !important;text-align: justify !important;letter-spacing: -0.02em !important; margin-bottom: 20px !important">SMART-SAVING est une solution de finance digitale qui permet de numériser tous les processus de gestion de l’épargne et de la tontine. Elle opère au moyen de Terminaux mobiles et de Cartes d’identification électroniques des clients. La robustesse de la solution est garantie par un mode « OFFLINE », qui lui permet de fonctionner avec fiabilité́ même sans connexion internet.</p>
-                  <!--<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                    <div>
-
-                      <article id='tabs-1'>
-
-                        <p>De manière non exhaustive, la solution SMART-SAVING permet de gérer les différents types d’épargne (tontine, épargne à vue, dépôts à terme) ; de gérer efficacement le KYC (enrôlement, géolocalisation, assignation de cartes NFC en remplacement des livrets traditionnels, etc.) ; d’accéder à distance et faire le monitoring de toutes les opérations en temps réel ; de produire des reçus de paiement personnalisés et compréhensible par les analphabètes ; d’évaluer les performances de l’activité à partir de modules de Business Intelligence, etc.</p>
-                        <p>Au-delà d’être un produit d’appel pour l’institution financière, SMART-SAVING offre un grand nombre d’avantages notamment : la modernisation et la digitalisation de la collecte de l’épargne ; la traçabilité et la sécurisation de l’épargne ; a confidentialité des informations financières et d’identification des clients ; l’accroissement du volume d’épargne collecté et de la productivité de toute la chaine de valeur tout en gardant un même niveau de charges opérationnelles ; le suivi en temps réel lors de la collecte journalière de l’évolution de la constitution des traites de remboursement des crédits adossé à la tontine afin de garantir le remboursement en fin de période; la lutte contre le blanchiment de capitaux et le financement du terrorisme, etc.</p>
-                      </article>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading text-left">
+                        <h2>Modules de <em>Solutions</em></h2>
+                        <span>Nos solutions peuvent être complémentaires ou autonomes</span>
                     </div>
-                  </div>-->
-                  <button  @click="toggle" class="filled-button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Voir Plus</button>
+                </div>
+                <div class="col-12" x-data="dropdown">
+                    <div class="row" x-show="! open">
+                        <div class=" col-12 col-md-6 order-2 order-md-1"
+                             style="padding: 122px 79px !important; background-color: #F3F3F4;">
+                            <div class="down-content">
+                                <h4 style="margin-bottom: 20px !important; font-weight: 700; font-size: 24px; line-height: 120%;">
+                                    Smart Saving</h4>
+                                <p style="font-weight: 300;font-size: 16px !important;line-height: 140% !important;text-align: justify !important;letter-spacing: -0.02em !important; margin-bottom: 20px !important">
+                                    SMART-SAVING est une solution de finance digitale qui permet de numériser tous les
+                                    processus de gestion de l’épargne et de la tontine. Elle opère au moyen de Terminaux
+                                    mobiles et de Cartes d’identification électroniques des clients. La robustesse de la
+                                    solution est garantie par un mode « OFFLINE », qui lui permet de fonctionner avec
+                                    fiabilité́ même sans connexion internet.</p>
+                                <button @click="toggle" class="filled-button" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Voir Plus
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class=" col-12 col-md-6 order-1 order-md-2 border d-flex justify-content-center align-items-center">
+                            <img src="https://res.cloudinary.com/aime/image/upload/v1652887580/Crypto_portfolio-bro_1_c6vvwm.svg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+
+                    <div class="row" x-show="open" x-class="fixed">
+                        <div class="col-12" style="padding: 45px 42px; background-color: #F3F3F4;">
+                            <h4 style="margin-bottom: 20px !important; font-weight: 700; font-size: 24px; line-height: 120%;">
+                                Smart Saving</h4>
+                            <p style="font-weight: 300;font-size: 16px !important;line-height: 140% !important;text-align: justify !important;letter-spacing: -0.02em !important; margin-bottom: 20px !important">
+                                SMART-SAVING est une solution de finance digitale qui permet de numériser tous les
+                                SMART-SAVING est une solution de finance digitale qui permet de numériser tous les
+                                processus de gestion de l’épargne et de la tontine. Elle opère au moyen de Terminaux
+                                mobiles et de Cartes d’identification électroniques des clients. La robustesse de la
+                                solution est garantie par un mode « OFFLINE », qui lui permet de fonctionner avec
+                                fiabilité́ même sans connexion internet.
+                                <br>
+
+                                De manière non exhaustive, la solution SMART-SAVING permet de gérer les différents types
+                                d’épargne (tontine, épargne à vue, dépôts à terme) ; de gérer efficacement le KYC
+                                (enrôlement, géolocalisation, assignation de cartes NFC en remplacement des livrets
+                                traditionnels, etc.) ; d’accéder à distance et faire le monitoring de toutes les
+                                opérations en temps réel ; de produire des reçus de paiement personnalisés et
+                                compréhensible par les analphabètes ; d’évaluer les performances de l’activité à partir
+                                de modules de Business Intelligence, etc.
+                                <br>
+
+                                Au-delà d’être un produit d’appel pour l’institution financière, SMART-SAVING offre un
+                                grand nombre d’avantages notamment : la modernisation et la digitalisation de la
+                                collecte de l’épargne ; la traçabilité et la sécurisation de l’épargne ; a
+                                confidentialité des informations financières et d’identification des clients ;
+                                l’accroissement du volume d’épargne collecté et de la productivité de toute la chaine de
+                                valeur tout en gardant un même niveau de charges opérationnelles ; le suivi en temps
+                                réel lors de la collecte journalière de l’évolution de la constitution des traites de
+                                remboursement des crédits adossé à la tontine afin de garantir le remboursement en fin
+                                de période; la lutte contre le blanchiment de capitaux et le financement du terrorisme,
+                                etc.</p>
+
+                            <button @click="toggle" class="filled-button" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Réduire
+                            </button>
+                        </div>
+                    </div>
                 </div>
 
-              </div>
-              <div class=" col-12 col-md-6 order-1 order-md-2 border d-flex justify-content-center align-items-center">
-                <img src="{% static 'images/3_smart_collect.png' %}" class="img-fluid" alt="">
-              </div>
-            </div>
+                <div class="col-12" x-data="dropdown">
+                    <div class="row" x-show="! open">
+                        <div class="col-12 col-md-6 order-1 order-md-1 border d-flex justify-content-center align-items-center">
+                            <img src="https://res.cloudinary.com/aime/image/upload/v1652887580/Wallet-pana_jbworr.svg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-12 col-md-6 order-2 order-md-2"
+                             style="padding: 122px 79px !important; background-color: #2E3946;">
+                            <div class="down-content">
+                                <h4 style="margin-bottom: 20px !important; font-weight: 700; font-size: 24px; line-height: 120%;color: #F3F3F4;">
+                                    Smart Credit</h4>
+                                <p style="color:#F3F3F4;font-weight: 300;font-size: 16px !important;line-height: 140% !important;text-align: justify !important;letter-spacing: -0.02em !important; margin-bottom: 20px !important">
+                                    SMART-CREDIT est une solution de finance digitale destinée à la gestion numérique du
+                                    crédit. Elle permet de digitaliser le traitement de la demande de crédit ainsi que
+                                    le suivi des remboursements et du portefeuille à risque. La robustesse de la
+                                    solution est garantie par un mode « OFFLINE », qui lui permet de fonctionner avec
+                                    fiabilité́ même sans connexion internet. SMART-CREDIT propose également des modules
+                                    pour la digitalisation des crédits aux groupements.</p>
+                                <button @click="toggle" class="filled-button" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Voir Plus
+                                </button>
+                            </div>
 
-            <div class="row" x-show="open" x-class="fixed">
-              <div class="col-12" style="padding: 45px 42px; background-color: #F3F3F4;">
-                <h4 style="margin-bottom: 20px !important; font-weight: 700; font-size: 24px; line-height: 120%;">Smart Saving</h4>
-                <p style="font-weight: 300;font-size: 16px !important;line-height: 140% !important;text-align: justify !important;letter-spacing: -0.02em !important; margin-bottom: 20px !important">SMART-SAVING est une solution de finance digitale qui permet de numériser tous les
-                  SMART-SAVING est une solution de finance digitale qui permet de numériser tous les processus de gestion de l’épargne et de la tontine. Elle opère au moyen de Terminaux mobiles et de Cartes d’identification électroniques des clients. La robustesse de la solution est garantie par un mode « OFFLINE », qui lui permet de fonctionner avec fiabilité́ même sans connexion internet.
-                  <br>
-
-                  De manière non exhaustive, la solution SMART-SAVING permet de gérer les différents types d’épargne (tontine, épargne à vue, dépôts à terme) ; de gérer efficacement le KYC (enrôlement, géolocalisation, assignation de cartes NFC en remplacement des livrets traditionnels, etc.) ; d’accéder à distance et faire le monitoring de toutes les opérations en temps réel ; de produire des reçus de paiement personnalisés et compréhensible par les analphabètes ; d’évaluer les performances de l’activité à partir de modules de Business Intelligence, etc.
-                  <br>
-
-                  Au-delà d’être un produit d’appel pour l’institution financière, SMART-SAVING offre un grand nombre d’avantages notamment : la modernisation et la digitalisation de la collecte de l’épargne ; la traçabilité et la sécurisation de l’épargne ; a confidentialité des informations financières et d’identification des clients ; l’accroissement du volume d’épargne collecté et de la productivité de toute la chaine de valeur tout en gardant un même niveau de charges opérationnelles ; le suivi en temps réel lors de la collecte journalière de l’évolution de la constitution des traites de remboursement des crédits adossé à la tontine afin de garantir le remboursement en fin de période; la lutte contre le blanchiment de capitaux et le financement du terrorisme, etc.</p>
-
-                  <button @click="toggle" class="filled-button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Réduire</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12" x-data="dropdown">
-            <div class="row" x-show="! open">
-              <div class="col-12 col-md-6 order-1 order-md-1 border d-flex justify-content-center align-items-center">
-                <img src="{% static 'images/3_smart_collect.png' %}" class="img-fluid" alt="">
-              </div>
-              <div class="col-12 col-md-6 order-2 order-md-2" style="padding: 122px 79px !important; background-color: #2E3946;">
-                <div class="down-content">
-                  <h4 style="margin-bottom: 20px !important; font-weight: 700; font-size: 24px; line-height: 120%;color: #F3F3F4;">Smart Credit</h4>
-                  <p style="color:#F3F3F4;font-weight: 300;font-size: 16px !important;line-height: 140% !important;text-align: justify !important;letter-spacing: -0.02em !important; margin-bottom: 20px !important">SMART-CREDIT est une solution de finance digitale destinée à la gestion numérique du crédit. Elle permet de digitaliser le traitement de la demande de crédit ainsi que le suivi des remboursements et du portefeuille à risque. La robustesse de la solution est garantie par un mode « OFFLINE », qui lui permet de fonctionner avec fiabilité́ même sans connexion internet. SMART-CREDIT propose également des modules pour la digitalisation des crédits aux groupements.</p>
-                  <!--<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                    <div>
-
-                      <article id='tabs-1'>
-
-                        <p>De manière non exhaustive, la solution SMART-SAVING permet de gérer les différents types d’épargne (tontine, épargne à vue, dépôts à terme) ; de gérer efficacement le KYC (enrôlement, géolocalisation, assignation de cartes NFC en remplacement des livrets traditionnels, etc.) ; d’accéder à distance et faire le monitoring de toutes les opérations en temps réel ; de produire des reçus de paiement personnalisés et compréhensible par les analphabètes ; d’évaluer les performances de l’activité à partir de modules de Business Intelligence, etc.</p>
-                        <p>Au-delà d’être un produit d’appel pour l’institution financière, SMART-SAVING offre un grand nombre d’avantages notamment : la modernisation et la digitalisation de la collecte de l’épargne ; la traçabilité et la sécurisation de l’épargne ; a confidentialité des informations financières et d’identification des clients ; l’accroissement du volume d’épargne collecté et de la productivité de toute la chaine de valeur tout en gardant un même niveau de charges opérationnelles ; le suivi en temps réel lors de la collecte journalière de l’évolution de la constitution des traites de remboursement des crédits adossé à la tontine afin de garantir le remboursement en fin de période; la lutte contre le blanchiment de capitaux et le financement du terrorisme, etc.</p>
-                      </article>
+                        </div>
                     </div>
-                  </div>-->
-                  <button @click="toggle" class="filled-button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Voir Plus</button>
+
+                    <div class="row" x-show="open">
+                        <div class="col-12" style="padding: 45px 42px; background-color: #2E3946;">
+                            <h4 style="color:#F3F3F4;margin-bottom: 20px !important; font-weight: 700; font-size: 24px; line-height: 120%;">
+                                Smart Credit</h4>
+                            <p style="color:#F3F3F4;font-weight: 300;font-size: 16px !important;line-height: 140% !important;text-align: justify !important;letter-spacing: -0.02em !important; margin-bottom: 20px !important">
+                                SMART-CREDIT est une solution de finance digitale destinée à la gestion numérique du
+                                crédit. Elle permet de digitaliser le traitement de la demande de crédit ainsi que le
+                                suivi des remboursements et du portefeuille à risque. La robustesse de la solution est
+                                garantie par un mode « OFFLINE », qui lui permet de fonctionner avec fiabilité́ même
+                                sans connexion internet. SMART-CREDIT propose également des modules pour la
+                                digitalisation des crédits aux groupements.
+                                <br>
+
+                                De manière non exhaustive, la plateforme SMART-CREDIT permet d’enregistrer via un
+                                Terminal mobile ou une application client (mobile ou web), l’expression du besoin en
+                                crédit du client directement sur le terrain; de collecter, numériser et centraliser
+                                toutes les informations nécessaires (KYC, et tout autre documents du demandeur et de ses
+                                cautions) au traitement de la demande et à son analyse financière; de relever les
+                                coordonnées GPS et prise des photos du lieu d’activité du client et de son domicile afin
+                                de faciliter le recouvrement des impayés (utile en cas de changement de portefeuille
+                                client) ; de générer automatiquement les contrats personnalisés de crédit au format PDF
+                                prêt pour impression et signature ; d’évaluer les performances de l’activité, suivre les
+                                indicateurs du portefeuille à risque à partir de modules de Business Intelligence et
+                                produire les statistiques et rapports d’activité selon les canevas réglementaires.
+                                <br>
+
+                                SMART-CREDIT offre un grand nombre d’avantages notamment : toutes les opérations de
+                                demande, de suivi et de recouvrement du crédit se font directement sur le terrain, ce
+                                qui constitue un véritable gain d’opportunité pour les clients; l’archivage numérique et
+                                l’automatisation des dossiers de crédits ; le monitoring et génération d’alertes à temps
+                                du risque de non remboursement d’un crédit adossé à la tontine ; l’accroissement du
+                                volume de crédits octroyés et de la productivité de toute la chaine de valeur, tout en
+                                gardant un même niveau de charges opérationnelles et un faible risque de non
+                                remboursement.
+                            </p>
+
+                            <button href="" @click="toggle" class="filled-button" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Réduire
+                            </button>
+                        </div>
+                    </div>
+
                 </div>
 
-              </div>
-            </div>
 
-            <div class="row" x-show="open">
-              <div class="col-12" style="padding: 45px 42px; background-color: #2E3946;">
-                <h4 style="color:#F3F3F4;margin-bottom: 20px !important; font-weight: 700; font-size: 24px; line-height: 120%;">Smart Saving</h4>
-                <p style="color:#F3F3F4;font-weight: 300;font-size: 16px !important;line-height: 140% !important;text-align: justify !important;letter-spacing: -0.02em !important; margin-bottom: 20px !important">SMART-CREDIT est une solution de finance digitale destinée à la gestion numérique du crédit. Elle permet de digitaliser le traitement de la demande de crédit ainsi que le suivi des remboursements et du portefeuille à risque. La robustesse de la solution est garantie par un mode « OFFLINE », qui lui permet de fonctionner avec fiabilité́ même sans connexion internet. SMART-CREDIT propose également des modules pour la digitalisation des crédits aux groupements.
-                  <br>
+                <div class="col-12" x-data="dropdown">
+                    <div class="row" x-show="! open">
+                        <div class=" col-12 col-md-6 order-2 order-md-1"
+                             style="padding: 122px 79px !important; background-color: #F3F3F4;">
+                            <div class="down-content">
+                                <h4 style="margin-bottom: 20px !important; font-weight: 700; font-size: 24px; line-height: 120%;">
+                                    Smart Agri</h4>
+                                <p style="font-weight: 300;font-size: 16px !important;line-height: 140% !important;text-align: justify !important;letter-spacing: -0.02em !important; margin-bottom: 20px !important">
+                                    SMART-AGRI est une solution qui permet de digitaliser le traitement de la demande du
+                                    crédit agricole ainsi que le suivi des remboursements et du portefeuille à risque.
+                                    Les
+                                    clients peuvent également procéder à la demande du crédit directement en ligne à
+                                    partir
+                                    d’une application mobile ou web déployée pour le compte de l’Institution financière.
+                                    La
+                                    robustesse de la solution est garantie par un mode « OFFLINE », qui lui permet de
+                                    fonctionner avec fiabilité́ même sans connexion internet.</p>
+                                <button @click="toggle" class="filled-button" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Voir Plus
+                                </button>
+                            </div>
 
-                  De manière non exhaustive, la plateforme SMART-CREDIT permet d’enregistrer via un Terminal mobile ou une application client (mobile ou web), l’expression du besoin en crédit du client directement sur le terrain; de collecter, numériser et centraliser toutes les informations nécessaires (KYC, et tout autre documents du demandeur et de ses cautions) au traitement de la demande et à son analyse financière; de relever les coordonnées GPS et prise des photos du lieu d’activité du client et de son domicile afin de faciliter le recouvrement des impayés (utile en cas de changement de portefeuille client) ; de générer automatiquement les contrats personnalisés de crédit au format PDF prêt pour impression et signature ; d’évaluer les performances de l’activité, suivre les indicateurs du portefeuille à risque à partir de modules de Business Intelligence et produire les statistiques et rapports d’activité selon les canevas réglementaires.
-                  <br>
-
-                  SMART-CREDIT offre un grand nombre d’avantages notamment : toutes les opérations de demande, de suivi et de recouvrement du crédit se font directement sur le terrain, ce qui constitue un véritable gain d’opportunité pour les clients; l’archivage numérique et l’automatisation des dossiers de crédits ; le monitoring et génération d’alertes à temps du risque de non remboursement d’un crédit adossé à la tontine ; l’accroissement du volume de crédits octroyés et de la productivité de toute la chaine de valeur, tout en gardant un même niveau de charges opérationnelles et un faible risque de non remboursement.
-                </p>
-
-                <button href="" @click="toggle" class="filled-button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Réduire</button>
-              </div>
-            </div>
-
-          </div>
-
-
-          <div class="col-12" x-data="dropdown">
-            <div class="row" x-show="! open">
-              <div class=" col-12 col-md-6 order-2 order-md-1" style="padding: 122px 79px !important; background-color: #F3F3F4;">
-                <div class="down-content">
-                  <h4 style="margin-bottom: 20px !important; font-weight: 700; font-size: 24px; line-height: 120%;">Smart Saving</h4>
-                  <p style="font-weight: 300;font-size: 16px !important;line-height: 140% !important;text-align: justify !important;letter-spacing: -0.02em !important; margin-bottom: 20px !important">SMART-SAVING est une solution de finance digitale qui permet de numériser tous les processus de gestion de l’épargne et de la tontine. Elle opère au moyen de Terminaux mobiles et de Cartes d’identification électroniques des clients. La robustesse de la solution est garantie par un mode « OFFLINE », qui lui permet de fonctionner avec fiabilité́ même sans connexion internet.</p>
-                  <!--<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                    <div>
-
-                      <article id='tabs-1'>
-
-                        <p>De manière non exhaustive, la solution SMART-SAVING permet de gérer les différents types d’épargne (tontine, épargne à vue, dépôts à terme) ; de gérer efficacement le KYC (enrôlement, géolocalisation, assignation de cartes NFC en remplacement des livrets traditionnels, etc.) ; d’accéder à distance et faire le monitoring de toutes les opérations en temps réel ; de produire des reçus de paiement personnalisés et compréhensible par les analphabètes ; d’évaluer les performances de l’activité à partir de modules de Business Intelligence, etc.</p>
-                        <p>Au-delà d’être un produit d’appel pour l’institution financière, SMART-SAVING offre un grand nombre d’avantages notamment : la modernisation et la digitalisation de la collecte de l’épargne ; la traçabilité et la sécurisation de l’épargne ; a confidentialité des informations financières et d’identification des clients ; l’accroissement du volume d’épargne collecté et de la productivité de toute la chaine de valeur tout en gardant un même niveau de charges opérationnelles ; le suivi en temps réel lors de la collecte journalière de l’évolution de la constitution des traites de remboursement des crédits adossé à la tontine afin de garantir le remboursement en fin de période; la lutte contre le blanchiment de capitaux et le financement du terrorisme, etc.</p>
-                      </article>
+                        </div>
+                        <div class=" col-12 col-md-6 order-1 order-md-2 border d-flex justify-content-center align-items-center">
+                            <img src="https://res.cloudinary.com/aime/image/upload/v1652890071/Farmer-bro_hzp4yc.svg" class="img-fluid" alt="">
+                        </div>
                     </div>
-                  </div>-->
-                  <button  @click="toggle" class="filled-button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Voir Plus</button>
+
+                    <div class="row" x-show="open" x-class="fixed">
+                        <div class="col-12" style="padding: 45px 42px; background-color: #F3F3F4;">
+                            <h4 style="margin-bottom: 20px !important; font-weight: 700; font-size: 24px; line-height: 120%;">
+                                Smart Agri</h4>
+                            <p style="font-weight: 300;font-size: 16px !important;line-height: 140% !important;text-align: justify !important;letter-spacing: -0.02em !important; margin-bottom: 20px !important">
+                                SMART-AGRI est une solution qui permet de digitaliser le traitement de la demande du
+                                crédit agricole ainsi que le suivi des remboursements et du portefeuille à risque. Les
+                                clients peuvent également procéder à la demande du crédit directement en ligne à partir
+                                d’une application mobile ou web déployée pour le compte de l’Institution financière. La
+                                robustesse de la solution est garantie par un mode « OFFLINE », qui lui permet de
+                                fonctionner avec fiabilité́ même sans connexion internet.
+                                <br>
+                                De manière non exhaustive, SMART-AGRI permet d’enregistrer via un Terminal mobile ou une
+                                application client (mobile ou web), l’expression du besoin en crédit agricole individuel
+                                ou de groupe directement sur le terrain; de collecter, numériser et centraliser toutes
+                                les informations nécessaires (KYC, et tout autre documents du demandeur et de ses
+                                cautions) au traitement de la demande et à son analyse financière; de relever les
+                                coordonnées GPS et prise des photos du lieu d’activité du client et de son domicile afin
+                                de faciliter le recouvrement des impayés (utile en cas de changement de portefeuille
+                                client) ; de générer automatiquement les contrats personnalisés de crédit au format PDF
+                                prêt pour impression et signature ; d’évaluer les performances de l’activité, suivre les
+                                indicateurs du portefeuille à risque à partir de modules de Business Intelligence et
+                                produire les statistiques et rapports d’activité selon les canevas réglementaires.
+                                <br>
+                                Au nombre des avantages qu’offre la solution SMART AGRI, nous avons l’archivage
+                                numérique et l’automatisation des dossiers de crédits ; le monitoring et génération
+                                d’alertes à temps du risque de non remboursement d’un crédit agricole ; la maitrise de
+                                la gestion du crédit agricole et l’accroissement de la productivité de toute la chaine
+                                de valeur, tout en gardant un même niveau de charges opérationnelles et un faible risque
+                                de non remboursement.
+                            </p>
+
+                            <button @click="toggle" class="filled-button" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Réduire
+                            </button>
+                        </div>
+                    </div>
                 </div>
 
-              </div>
-              <div class=" col-12 col-md-6 order-1 order-md-2 border d-flex justify-content-center align-items-center">
-                <img src="{% static 'images/3_smart_collect.png' %}" class="img-fluid" alt="">
-              </div>
-            </div>
+                <div class="col-12" x-data="dropdown">
+                    <div class="row" x-show="! open">
+                        <div class="col-12 col-md-6 order-1 order-md-1 border d-flex justify-content-center align-items-center">
+                            <img src="https://res.cloudinary.com/aime/image/upload/v1652887580/Tax-pana_ic0wz4.svg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-12 col-md-6 order-2 order-md-2"
+                             style="padding: 122px 79px !important; background-color: #2E3946;">
+                            <div class="down-content">
+                                <h4 style="margin-bottom: 20px !important; font-weight: 700; font-size: 24px; line-height: 120%;color: #F3F3F4;">
+                                    Smart Tax</h4>
+                                <p style="color:#F3F3F4;font-weight: 300;font-size: 16px !important;line-height: 140% !important;text-align: justify !important;letter-spacing: -0.02em !important; margin-bottom: 20px !important">
+                                    C’est une solution électronique complète et intégrée, destinée aux collectivités
+                                    territoriales décentralisées, aux sociétés de gestion de marchés ou aux Etats,
+                                    permettant la collecte digitale et le suivi efficace des taxes et recettes non
+                                    fiscales.</p>
+                                <button @click="toggle" class="filled-button" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Voir Plus
+                                </button>
+                            </div>
 
-            <div class="row" x-show="open" x-class="fixed">
-              <div class="col-12" style="padding: 45px 42px; background-color: #F3F3F4;">
-                <h4 style="margin-bottom: 20px !important; font-weight: 700; font-size: 24px; line-height: 120%;">Smart Saving</h4>
-                <p style="font-weight: 300;font-size: 16px !important;line-height: 140% !important;text-align: justify !important;letter-spacing: -0.02em !important; margin-bottom: 20px !important">SMART-SAVING est une solution de finance digitale qui permet de numériser tous les
-                  SMART-SAVING est une solution de finance digitale qui permet de numériser tous les processus de gestion de l’épargne et de la tontine. Elle opère au moyen de Terminaux mobiles et de Cartes d’identification électroniques des clients. La robustesse de la solution est garantie par un mode « OFFLINE », qui lui permet de fonctionner avec fiabilité́ même sans connexion internet.
-                  <br>
-
-                  De manière non exhaustive, la solution SMART-SAVING permet de gérer les différents types d’épargne (tontine, épargne à vue, dépôts à terme) ; de gérer efficacement le KYC (enrôlement, géolocalisation, assignation de cartes NFC en remplacement des livrets traditionnels, etc.) ; d’accéder à distance et faire le monitoring de toutes les opérations en temps réel ; de produire des reçus de paiement personnalisés et compréhensible par les analphabètes ; d’évaluer les performances de l’activité à partir de modules de Business Intelligence, etc.
-                  <br>
-
-                  Au-delà d’être un produit d’appel pour l’institution financière, SMART-SAVING offre un grand nombre d’avantages notamment : la modernisation et la digitalisation de la collecte de l’épargne ; la traçabilité et la sécurisation de l’épargne ; a confidentialité des informations financières et d’identification des clients ; l’accroissement du volume d’épargne collecté et de la productivité de toute la chaine de valeur tout en gardant un même niveau de charges opérationnelles ; le suivi en temps réel lors de la collecte journalière de l’évolution de la constitution des traites de remboursement des crédits adossé à la tontine afin de garantir le remboursement en fin de période; la lutte contre le blanchiment de capitaux et le financement du terrorisme, etc.</p>
-
-                  <button @click="toggle" class="filled-button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Réduire</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12" x-data="dropdown">
-            <div class="row" x-show="! open">
-              <div class="col-12 col-md-6 order-1 order-md-1 border d-flex justify-content-center align-items-center">
-                <img src="{% static 'images/3_smart_collect.png' %}" class="img-fluid" alt="">
-              </div>
-              <div class="col-12 col-md-6 order-2 order-md-2" style="padding: 122px 79px !important; background-color: #2E3946;">
-                <div class="down-content">
-                  <h4 style="margin-bottom: 20px !important; font-weight: 700; font-size: 24px; line-height: 120%;color: #F3F3F4;">Smart Credit</h4>
-                  <p style="color:#F3F3F4;font-weight: 300;font-size: 16px !important;line-height: 140% !important;text-align: justify !important;letter-spacing: -0.02em !important; margin-bottom: 20px !important">SMART-CREDIT est une solution de finance digitale destinée à la gestion numérique du crédit. Elle permet de digitaliser le traitement de la demande de crédit ainsi que le suivi des remboursements et du portefeuille à risque. La robustesse de la solution est garantie par un mode « OFFLINE », qui lui permet de fonctionner avec fiabilité́ même sans connexion internet. SMART-CREDIT propose également des modules pour la digitalisation des crédits aux groupements.</p>
-                  <!--<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                    <div>
-
-                      <article id='tabs-1'>
-
-                        <p>De manière non exhaustive, la solution SMART-SAVING permet de gérer les différents types d’épargne (tontine, épargne à vue, dépôts à terme) ; de gérer efficacement le KYC (enrôlement, géolocalisation, assignation de cartes NFC en remplacement des livrets traditionnels, etc.) ; d’accéder à distance et faire le monitoring de toutes les opérations en temps réel ; de produire des reçus de paiement personnalisés et compréhensible par les analphabètes ; d’évaluer les performances de l’activité à partir de modules de Business Intelligence, etc.</p>
-                        <p>Au-delà d’être un produit d’appel pour l’institution financière, SMART-SAVING offre un grand nombre d’avantages notamment : la modernisation et la digitalisation de la collecte de l’épargne ; la traçabilité et la sécurisation de l’épargne ; a confidentialité des informations financières et d’identification des clients ; l’accroissement du volume d’épargne collecté et de la productivité de toute la chaine de valeur tout en gardant un même niveau de charges opérationnelles ; le suivi en temps réel lors de la collecte journalière de l’évolution de la constitution des traites de remboursement des crédits adossé à la tontine afin de garantir le remboursement en fin de période; la lutte contre le blanchiment de capitaux et le financement du terrorisme, etc.</p>
-                      </article>
+                        </div>
                     </div>
-                  </div>-->
-                  <button @click="toggle" class="filled-button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Voir Plus</button>
+
+                    <div class="row" x-show="open">
+                        <div class="col-12" style="padding: 45px 42px; background-color: #2E3946;">
+                            <h4 style="color:#F3F3F4;margin-bottom: 20px !important; font-weight: 700; font-size: 24px; line-height: 120%;">
+                                Smart Tax</h4>
+                            <p style="color:#F3F3F4;font-weight: 300;font-size: 16px !important;line-height: 140% !important;text-align: justify !important;letter-spacing: -0.02em !important; margin-bottom: 20px !important">
+                                C’est une solution électronique complète et intégrée, destinée aux collectivités
+                                territoriales décentralisées, aux sociétés de gestion de marchés ou aux Etats,
+                                permettant la collecte digitale et le suivi efficace des taxes et recettes non fiscales.
+                                <br>
+
+                                De manière non exhaustive, la plateforme SMART-TAX permet le recensement des
+                                contribuables ; la personnalisation et l’attribution de cartes électroniques
+                                d’identification ; le recensement des étals et équipements marchands ; la collecte
+                                électronique des recettes sur les marchés et hors des marchés ; le reversement des
+                                collectes ; la génération du journal de transactions, etc.
+                                <br>
+
+                                SMART-TAX offre un grand nombre d’avantages notamment la consolidation et la
+                                maximisation des recettes fiscales ; la lutte contre les fuites de capitaux, etc.
+
+                            </p>
+
+                            <button href="" @click="toggle" class="filled-button" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Réduire
+                            </button>
+                        </div>
+                    </div>
+
                 </div>
 
-              </div>
-            </div>
 
-            <div class="row" x-show="open">
-              <div class="col-12" style="padding: 45px 42px; background-color: #2E3946;">
-                <h4 style="color:#F3F3F4;margin-bottom: 20px !important; font-weight: 700; font-size: 24px; line-height: 120%;">Smart Saving</h4>
-                <p style="color:#F3F3F4;font-weight: 300;font-size: 16px !important;line-height: 140% !important;text-align: justify !important;letter-spacing: -0.02em !important; margin-bottom: 20px !important">SMART-CREDIT est une solution de finance digitale destinée à la gestion numérique du crédit. Elle permet de digitaliser le traitement de la demande de crédit ainsi que le suivi des remboursements et du portefeuille à risque. La robustesse de la solution est garantie par un mode « OFFLINE », qui lui permet de fonctionner avec fiabilité́ même sans connexion internet. SMART-CREDIT propose également des modules pour la digitalisation des crédits aux groupements.
-                  <br>
+                <div class="col-12" x-data="dropdown">
+                    <div class="row" x-show="! open">
+                        <div class=" col-12 col-md-6 order-2 order-md-1"
+                             style="padding: 122px 79px !important; background-color: #F3F3F4;">
+                            <div class="down-content">
+                                <h4 style="margin-bottom: 20px !important; font-weight: 700; font-size: 24px; line-height: 120%;">
+                                    Smart Pay</h4>
+                                <p style="font-weight: 300;font-size: 16px !important;line-height: 140% !important;text-align: justify !important;letter-spacing: -0.02em !important; margin-bottom: 20px !important">
+                                    SMART-PAY est une solution sécurisée d’émission, de traitement et de distribution de
+                                    monnaie électronique. Elle permet de gérer les opérations telles que la création et
+                                    la
+                                    fermeture de comptes de monnaie électronique, le dépôt, le retrait, le transfert, le
+                                    paiement marchand, etc.</p>
+                                <button @click="toggle" class="filled-button" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Voir Plus
+                                </button>
+                            </div>
 
-                  De manière non exhaustive, la plateforme SMART-CREDIT permet d’enregistrer via un Terminal mobile ou une application client (mobile ou web), l’expression du besoin en crédit du client directement sur le terrain; de collecter, numériser et centraliser toutes les informations nécessaires (KYC, et tout autre documents du demandeur et de ses cautions) au traitement de la demande et à son analyse financière; de relever les coordonnées GPS et prise des photos du lieu d’activité du client et de son domicile afin de faciliter le recouvrement des impayés (utile en cas de changement de portefeuille client) ; de générer automatiquement les contrats personnalisés de crédit au format PDF prêt pour impression et signature ; d’évaluer les performances de l’activité, suivre les indicateurs du portefeuille à risque à partir de modules de Business Intelligence et produire les statistiques et rapports d’activité selon les canevas réglementaires.
-                  <br>
-
-                  SMART-CREDIT offre un grand nombre d’avantages notamment : toutes les opérations de demande, de suivi et de recouvrement du crédit se font directement sur le terrain, ce qui constitue un véritable gain d’opportunité pour les clients; l’archivage numérique et l’automatisation des dossiers de crédits ; le monitoring et génération d’alertes à temps du risque de non remboursement d’un crédit adossé à la tontine ; l’accroissement du volume de crédits octroyés et de la productivité de toute la chaine de valeur, tout en gardant un même niveau de charges opérationnelles et un faible risque de non remboursement.
-                </p>
-
-                <button href="" @click="toggle" class="filled-button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Réduire</button>
-              </div>
-            </div>
-
-          </div>
-
-
-          <div class="col-12" x-data="dropdown">
-            <div class="row" x-show="! open">
-              <div class=" col-12 col-md-6 order-2 order-md-1" style="padding: 122px 79px !important; background-color: #F3F3F4;">
-                <div class="down-content">
-                  <h4 style="margin-bottom: 20px !important; font-weight: 700; font-size: 24px; line-height: 120%;">Smart Saving</h4>
-                  <p style="font-weight: 300;font-size: 16px !important;line-height: 140% !important;text-align: justify !important;letter-spacing: -0.02em !important; margin-bottom: 20px !important">SMART-SAVING est une solution de finance digitale qui permet de numériser tous les processus de gestion de l’épargne et de la tontine. Elle opère au moyen de Terminaux mobiles et de Cartes d’identification électroniques des clients. La robustesse de la solution est garantie par un mode « OFFLINE », qui lui permet de fonctionner avec fiabilité́ même sans connexion internet.</p>
-                  <!--<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                    <div>
-
-                      <article id='tabs-1'>
-
-                        <p>De manière non exhaustive, la solution SMART-SAVING permet de gérer les différents types d’épargne (tontine, épargne à vue, dépôts à terme) ; de gérer efficacement le KYC (enrôlement, géolocalisation, assignation de cartes NFC en remplacement des livrets traditionnels, etc.) ; d’accéder à distance et faire le monitoring de toutes les opérations en temps réel ; de produire des reçus de paiement personnalisés et compréhensible par les analphabètes ; d’évaluer les performances de l’activité à partir de modules de Business Intelligence, etc.</p>
-                        <p>Au-delà d’être un produit d’appel pour l’institution financière, SMART-SAVING offre un grand nombre d’avantages notamment : la modernisation et la digitalisation de la collecte de l’épargne ; la traçabilité et la sécurisation de l’épargne ; a confidentialité des informations financières et d’identification des clients ; l’accroissement du volume d’épargne collecté et de la productivité de toute la chaine de valeur tout en gardant un même niveau de charges opérationnelles ; le suivi en temps réel lors de la collecte journalière de l’évolution de la constitution des traites de remboursement des crédits adossé à la tontine afin de garantir le remboursement en fin de période; la lutte contre le blanchiment de capitaux et le financement du terrorisme, etc.</p>
-                      </article>
+                        </div>
+                        <div class=" col-12 col-md-6 order-1 order-md-2 border d-flex justify-content-center align-items-center">
+                            <img src="https://res.cloudinary.com/aime/image/upload/v1652890071/Payment_Information-bro_lrcstv.svg" class="img-fluid" alt="">
+                        </div>
                     </div>
-                  </div>-->
-                  <button  @click="toggle" class="filled-button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Voir Plus</button>
+
+                    <div class="row" x-show="open" x-class="fixed">
+                        <div class="col-12" style="padding: 45px 42px; background-color: #F3F3F4;">
+                            <h4 style="margin-bottom: 20px !important; font-weight: 700; font-size: 24px; line-height: 120%;">
+                                Smart Pay</h4>
+                            <p style="font-weight: 300;font-size: 16px !important;line-height: 140% !important;text-align: justify !important;letter-spacing: -0.02em !important; margin-bottom: 20px !important">
+                                SMART-PAY est une solution sécurisée d’émission, de traitement et de distribution de
+                                monnaie électronique. Elle permet de gérer les opérations telles que la création et la
+                                fermeture de comptes de monnaie électronique, le dépôt, le retrait, le transfert, le
+                                paiement marchand, etc.
+                                <br>
+
+                                De manière non exhaustive, la plateforme SMART-PAY permet de créer, gérer et administrer
+                                des comptes de monnaie électronique ; d’effectuer des dépôts, retraits, transferts
+                                d’argent et payements, etc.
+                                <br>
+
+                                SMART-PAY offre un grand nombre d’avantages dont la réduction des risques de fraudes ;
+                                la réduction des risques d’impayés dus aux échanges monétaires ; la réduction des coûts
+                                comparativement aux frais bancaires, etc.
+
+                            </p>
+
+                            <button @click="toggle" class="filled-button" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Réduire
+                            </button>
+                        </div>
+                    </div>
                 </div>
 
-              </div>
-              <div class=" col-12 col-md-6 order-1 order-md-2 border d-flex justify-content-center align-items-center">
-                <img src="{% static 'images/3_smart_collect.png' %}" class="img-fluid" alt="">
-              </div>
-            </div>
+                <div class="col-12" x-data="dropdown">
+                    <div class="row" x-show="! open">
+                        <div class="col-12 col-md-6 order-1 order-md-1 border d-flex justify-content-center align-items-center">
+                            <img src="https://res.cloudinary.com/aime/image/upload/v1652887581/Parking-amico_gnsfqx.svg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-12 col-md-6 order-2 order-md-2"
+                             style="padding: 122px 79px !important; background-color: #2E3946;">
+                            <div class="down-content">
+                                <h4 style="margin-bottom: 20px !important; font-weight: 700; font-size: 24px; line-height: 120%;color: #F3F3F4;">
+                                    Smart Parking</h4>
+                                <p style="color:#F3F3F4;font-weight: 300;font-size: 16px !important;line-height: 140% !important;text-align: justify !important;letter-spacing: -0.02em !important; margin-bottom: 20px !important">
+                                    C’est est une solution de dématérialisation de la collecte et du suivi des recettes
+                                    de
+                                    parkings urbain et de péages routiers.</p>
+                                <button @click="toggle" class="filled-button" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Voir Plus
+                                </button>
+                            </div>
 
-            <div class="row" x-show="open" x-class="fixed">
-              <div class="col-12" style="padding: 45px 42px; background-color: #F3F3F4;">
-                <h4 style="margin-bottom: 20px !important; font-weight: 700; font-size: 24px; line-height: 120%;">Smart Saving</h4>
-                <p style="font-weight: 300;font-size: 16px !important;line-height: 140% !important;text-align: justify !important;letter-spacing: -0.02em !important; margin-bottom: 20px !important">SMART-SAVING est une solution de finance digitale qui permet de numériser tous les
-                  SMART-SAVING est une solution de finance digitale qui permet de numériser tous les processus de gestion de l’épargne et de la tontine. Elle opère au moyen de Terminaux mobiles et de Cartes d’identification électroniques des clients. La robustesse de la solution est garantie par un mode « OFFLINE », qui lui permet de fonctionner avec fiabilité́ même sans connexion internet.
-                  <br>
-
-                  De manière non exhaustive, la solution SMART-SAVING permet de gérer les différents types d’épargne (tontine, épargne à vue, dépôts à terme) ; de gérer efficacement le KYC (enrôlement, géolocalisation, assignation de cartes NFC en remplacement des livrets traditionnels, etc.) ; d’accéder à distance et faire le monitoring de toutes les opérations en temps réel ; de produire des reçus de paiement personnalisés et compréhensible par les analphabètes ; d’évaluer les performances de l’activité à partir de modules de Business Intelligence, etc.
-                  <br>
-
-                  Au-delà d’être un produit d’appel pour l’institution financière, SMART-SAVING offre un grand nombre d’avantages notamment : la modernisation et la digitalisation de la collecte de l’épargne ; la traçabilité et la sécurisation de l’épargne ; a confidentialité des informations financières et d’identification des clients ; l’accroissement du volume d’épargne collecté et de la productivité de toute la chaine de valeur tout en gardant un même niveau de charges opérationnelles ; le suivi en temps réel lors de la collecte journalière de l’évolution de la constitution des traites de remboursement des crédits adossé à la tontine afin de garantir le remboursement en fin de période; la lutte contre le blanchiment de capitaux et le financement du terrorisme, etc.</p>
-
-                  <button @click="toggle" class="filled-button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Réduire</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12" x-data="dropdown">
-            <div class="row" x-show="! open">
-              <div class="col-12 col-md-6 order-1 order-md-1 border d-flex justify-content-center align-items-center">
-                <img src="{% static 'images/3_smart_collect.png' %}" class="img-fluid" alt="">
-              </div>
-              <div class="col-12 col-md-6 order-2 order-md-2" style="padding: 122px 79px !important; background-color: #2E3946;">
-                <div class="down-content">
-                  <h4 style="margin-bottom: 20px !important; font-weight: 700; font-size: 24px; line-height: 120%;color: #F3F3F4;">Smart Credit</h4>
-                  <p style="color:#F3F3F4;font-weight: 300;font-size: 16px !important;line-height: 140% !important;text-align: justify !important;letter-spacing: -0.02em !important; margin-bottom: 20px !important">SMART-CREDIT est une solution de finance digitale destinée à la gestion numérique du crédit. Elle permet de digitaliser le traitement de la demande de crédit ainsi que le suivi des remboursements et du portefeuille à risque. La robustesse de la solution est garantie par un mode « OFFLINE », qui lui permet de fonctionner avec fiabilité́ même sans connexion internet. SMART-CREDIT propose également des modules pour la digitalisation des crédits aux groupements.</p>
-                  <!--<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                    <div>
-
-                      <article id='tabs-1'>
-
-                        <p>De manière non exhaustive, la solution SMART-SAVING permet de gérer les différents types d’épargne (tontine, épargne à vue, dépôts à terme) ; de gérer efficacement le KYC (enrôlement, géolocalisation, assignation de cartes NFC en remplacement des livrets traditionnels, etc.) ; d’accéder à distance et faire le monitoring de toutes les opérations en temps réel ; de produire des reçus de paiement personnalisés et compréhensible par les analphabètes ; d’évaluer les performances de l’activité à partir de modules de Business Intelligence, etc.</p>
-                        <p>Au-delà d’être un produit d’appel pour l’institution financière, SMART-SAVING offre un grand nombre d’avantages notamment : la modernisation et la digitalisation de la collecte de l’épargne ; la traçabilité et la sécurisation de l’épargne ; a confidentialité des informations financières et d’identification des clients ; l’accroissement du volume d’épargne collecté et de la productivité de toute la chaine de valeur tout en gardant un même niveau de charges opérationnelles ; le suivi en temps réel lors de la collecte journalière de l’évolution de la constitution des traites de remboursement des crédits adossé à la tontine afin de garantir le remboursement en fin de période; la lutte contre le blanchiment de capitaux et le financement du terrorisme, etc.</p>
-                      </article>
+                        </div>
                     </div>
-                  </div>-->
-                  <button @click="toggle" class="filled-button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Voir Plus</button>
+
+                    <div class="row" x-show="open">
+                        <div class="col-12" style="padding: 45px 42px; background-color: #2E3946;">
+                            <h4 style="color:#F3F3F4;margin-bottom: 20px !important; font-weight: 700; font-size: 24px; line-height: 120%;">
+                                Smart Parking</h4>
+                            <p style="color:#F3F3F4;font-weight: 300;font-size: 16px !important;line-height: 140% !important;text-align: justify !important;letter-spacing: -0.02em !important; margin-bottom: 20px !important">
+                                C’est est une solution de dématérialisation de la collecte et du suivi des recettes de
+                                parkings urbain et de péages routiers.
+                                <br>
+
+                                De manière non exhaustive, la plateforme SMART PARKING permet de dématérialiser et
+                                centraliser les paiements et droits de passage; d’effectuer le monitoring sur les sites
+                                à l’aide de caméras de surveillance interconnectées, etc.
+                                <br>
+
+                                SMART PARKING offre un grand nombre d’avantages notamment : l’automatisation du calcul
+                                des recettes ; la maximisation des recettes collectées dans les parkings, etc.
+
+                            </p>
+
+                            <button href="" @click="toggle" class="filled-button" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Réduire
+                            </button>
+                        </div>
+                    </div>
+
                 </div>
 
-              </div>
-            </div>
 
-            <div class="row" x-show="open">
-              <div class="col-12" style="padding: 45px 42px; background-color: #2E3946;">
-                <h4 style="color:#F3F3F4;margin-bottom: 20px !important; font-weight: 700; font-size: 24px; line-height: 120%;">Smart Saving</h4>
-                <p style="color:#F3F3F4;font-weight: 300;font-size: 16px !important;line-height: 140% !important;text-align: justify !important;letter-spacing: -0.02em !important; margin-bottom: 20px !important">SMART-CREDIT est une solution de finance digitale destinée à la gestion numérique du crédit. Elle permet de digitaliser le traitement de la demande de crédit ainsi que le suivi des remboursements et du portefeuille à risque. La robustesse de la solution est garantie par un mode « OFFLINE », qui lui permet de fonctionner avec fiabilité́ même sans connexion internet. SMART-CREDIT propose également des modules pour la digitalisation des crédits aux groupements.
-                  <br>
+                <div class="col-12" x-data="dropdown">
+                    <div class="row" x-show="! open">
+                        <div class=" col-12 col-md-6 order-2 order-md-1"
+                             style="padding: 122px 79px !important; background-color: #F3F3F4;">
+                            <div class="down-content">
+                                <h4 style="margin-bottom: 20px !important; font-weight: 700; font-size: 24px; line-height: 120%;">
+                                    Smart Census</h4>
+                                <p style="font-weight: 300;font-size: 16px !important;line-height: 140% !important;text-align: justify !important;letter-spacing: -0.02em !important; margin-bottom: 20px !important">
+                                    Une solution destinée à faciliter les opérations de collecte d’informations, les
+                                    enquêtes statistiques et les recensements dans toutes leurs émanations.</p>
+                                <button @click="toggle" class="filled-button" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Voir Plus
+                                </button>
+                            </div>
 
-                  De manière non exhaustive, la plateforme SMART-CREDIT permet d’enregistrer via un Terminal mobile ou une application client (mobile ou web), l’expression du besoin en crédit du client directement sur le terrain; de collecter, numériser et centraliser toutes les informations nécessaires (KYC, et tout autre documents du demandeur et de ses cautions) au traitement de la demande et à son analyse financière; de relever les coordonnées GPS et prise des photos du lieu d’activité du client et de son domicile afin de faciliter le recouvrement des impayés (utile en cas de changement de portefeuille client) ; de générer automatiquement les contrats personnalisés de crédit au format PDF prêt pour impression et signature ; d’évaluer les performances de l’activité, suivre les indicateurs du portefeuille à risque à partir de modules de Business Intelligence et produire les statistiques et rapports d’activité selon les canevas réglementaires.
-                  <br>
-
-                  SMART-CREDIT offre un grand nombre d’avantages notamment : toutes les opérations de demande, de suivi et de recouvrement du crédit se font directement sur le terrain, ce qui constitue un véritable gain d’opportunité pour les clients; l’archivage numérique et l’automatisation des dossiers de crédits ; le monitoring et génération d’alertes à temps du risque de non remboursement d’un crédit adossé à la tontine ; l’accroissement du volume de crédits octroyés et de la productivité de toute la chaine de valeur, tout en gardant un même niveau de charges opérationnelles et un faible risque de non remboursement.
-                </p>
-
-                <button href="" @click="toggle" class="filled-button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Réduire</button>
-              </div>
-            </div>
-
-          </div>
-
-
-          <div class="col-12" x-data="dropdown">
-            <div class="row" x-show="! open">
-              <div class=" col-12 col-md-6 order-2 order-md-1" style="padding: 122px 79px !important; background-color: #F3F3F4;">
-                <div class="down-content">
-                  <h4 style="margin-bottom: 20px !important; font-weight: 700; font-size: 24px; line-height: 120%;">Smart Saving</h4>
-                  <p style="font-weight: 300;font-size: 16px !important;line-height: 140% !important;text-align: justify !important;letter-spacing: -0.02em !important; margin-bottom: 20px !important">SMART-SAVING est une solution de finance digitale qui permet de numériser tous les processus de gestion de l’épargne et de la tontine. Elle opère au moyen de Terminaux mobiles et de Cartes d’identification électroniques des clients. La robustesse de la solution est garantie par un mode « OFFLINE », qui lui permet de fonctionner avec fiabilité́ même sans connexion internet.</p>
-                  <!--<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                    <div>
-
-                      <article id='tabs-1'>
-
-                        <p>De manière non exhaustive, la solution SMART-SAVING permet de gérer les différents types d’épargne (tontine, épargne à vue, dépôts à terme) ; de gérer efficacement le KYC (enrôlement, géolocalisation, assignation de cartes NFC en remplacement des livrets traditionnels, etc.) ; d’accéder à distance et faire le monitoring de toutes les opérations en temps réel ; de produire des reçus de paiement personnalisés et compréhensible par les analphabètes ; d’évaluer les performances de l’activité à partir de modules de Business Intelligence, etc.</p>
-                        <p>Au-delà d’être un produit d’appel pour l’institution financière, SMART-SAVING offre un grand nombre d’avantages notamment : la modernisation et la digitalisation de la collecte de l’épargne ; la traçabilité et la sécurisation de l’épargne ; a confidentialité des informations financières et d’identification des clients ; l’accroissement du volume d’épargne collecté et de la productivité de toute la chaine de valeur tout en gardant un même niveau de charges opérationnelles ; le suivi en temps réel lors de la collecte journalière de l’évolution de la constitution des traites de remboursement des crédits adossé à la tontine afin de garantir le remboursement en fin de période; la lutte contre le blanchiment de capitaux et le financement du terrorisme, etc.</p>
-                      </article>
+                        </div>
+                        <div class=" col-12 col-md-6 order-1 order-md-2 border d-flex justify-content-center align-items-center">
+                            <img src="https://res.cloudinary.com/aime/image/upload/v1652890070/Collecting-rafiki_1_yb5sq4.svg" class="img-fluid" alt="">
+                        </div>
                     </div>
-                  </div>-->
-                  <button  @click="toggle" class="filled-button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Voir Plus</button>
+
+                    <div class="row" x-show="open" x-class="fixed">
+                        <div class="col-12" style="padding: 45px 42px; background-color: #F3F3F4;">
+                            <h4 style="margin-bottom: 20px !important; font-weight: 700; font-size: 24px; line-height: 120%;">
+                                Smart Census</h4>
+                            <p style="font-weight: 300;font-size: 16px !important;line-height: 140% !important;text-align: justify !important;letter-spacing: -0.02em !important; margin-bottom: 20px !important">
+                                Une solution destinée à faciliter les opérations de collecte d’informations, les
+                                enquêtes statistiques et les recensements dans toutes leurs émanations.
+                                <br>
+
+                                De manière non exhaustive, la plateforme SMART CENSUS permet l’intégration de
+                                formulaires de collecte de données quelle que soit la complexité ; la génération de
+                                dictionnaires CsPro à partir de la solution une fois les formulaires de collectes
+                                intégrés ; l’intégration d’enquêtes à partir de dictionnaires CsPro existants dans la
+                                solution ; la collecte électronique de données et enrôlement biométrique ; le contrôle
+                                de cohérence et d’exhaustivité ; la centralisation de toutes les collectes en temps réel
+                                vers un cluster de serveurs, indépendamment de la localisation des agents ; le transfert
+                                des données collectées automatiquement vers une base de données CsPro centrale ; le
+                                contrôle des agents sur le site par géolocalisation ; la génération de statistiques de
+                                présence, meilleurs agents, etc.
+                                <br>
+
+                                SMART CENSUS offre un grand nombre d’avantages notamment la facilité de collecte, de
+                                traitement et de sécurisation des données ; la fiabilisation des bases de données et du
+                                KYC.
+
+                            </p>
+
+                            <button @click="toggle" class="filled-button" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Réduire
+                            </button>
+                        </div>
+                    </div>
                 </div>
 
-              </div>
-              <div class=" col-12 col-md-6 order-1 order-md-2 border d-flex justify-content-center align-items-center">
-                <img src="{% static 'images/3_smart_collect.png' %}" class="img-fluid" alt="">
-              </div>
-            </div>
+                <div class="col-12" x-data="dropdown">
+                    <div class="row" x-show="! open">
+                        <div class="col-12 col-md-6 order-1 order-md-1 border d-flex justify-content-center align-items-center">
+                            <img src="https://res.cloudinary.com/aime/image/upload/v1652887581/Online_transactions-amico_a80d1t.svg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-12 col-md-6 order-2 order-md-2"
+                             style="padding: 122px 79px !important; background-color: #2E3946;">
+                            <div class="down-content">
+                                <h4 style="margin-bottom: 20px !important; font-weight: 700; font-size: 24px; line-height: 120%;color: #F3F3F4;">
+                                    Smart Switch</h4>
+                                <p style="color:#F3F3F4;font-weight: 300;font-size: 16px !important;line-height: 140% !important;text-align: justify !important;letter-spacing: -0.02em !important; margin-bottom: 20px !important">
+                                    C’est une passerelle permettant l’interopérabilité pair-à-pair entre notre
+                                    plateforme et
+                                    d'autres systèmes de paiement.</p>
+                                <button @click="toggle" class="filled-button" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Voir Plus
+                                </button>
+                            </div>
 
-            <div class="row" x-show="open" x-class="fixed">
-              <div class="col-12" style="padding: 45px 42px; background-color: #F3F3F4;">
-                <h4 style="margin-bottom: 20px !important; font-weight: 700; font-size: 24px; line-height: 120%;">Smart Saving</h4>
-                <p style="font-weight: 300;font-size: 16px !important;line-height: 140% !important;text-align: justify !important;letter-spacing: -0.02em !important; margin-bottom: 20px !important">SMART-SAVING est une solution de finance digitale qui permet de numériser tous les
-                  SMART-SAVING est une solution de finance digitale qui permet de numériser tous les processus de gestion de l’épargne et de la tontine. Elle opère au moyen de Terminaux mobiles et de Cartes d’identification électroniques des clients. La robustesse de la solution est garantie par un mode « OFFLINE », qui lui permet de fonctionner avec fiabilité́ même sans connexion internet.
-                  <br>
-
-                  De manière non exhaustive, la solution SMART-SAVING permet de gérer les différents types d’épargne (tontine, épargne à vue, dépôts à terme) ; de gérer efficacement le KYC (enrôlement, géolocalisation, assignation de cartes NFC en remplacement des livrets traditionnels, etc.) ; d’accéder à distance et faire le monitoring de toutes les opérations en temps réel ; de produire des reçus de paiement personnalisés et compréhensible par les analphabètes ; d’évaluer les performances de l’activité à partir de modules de Business Intelligence, etc.
-                  <br>
-
-                  Au-delà d’être un produit d’appel pour l’institution financière, SMART-SAVING offre un grand nombre d’avantages notamment : la modernisation et la digitalisation de la collecte de l’épargne ; la traçabilité et la sécurisation de l’épargne ; a confidentialité des informations financières et d’identification des clients ; l’accroissement du volume d’épargne collecté et de la productivité de toute la chaine de valeur tout en gardant un même niveau de charges opérationnelles ; le suivi en temps réel lors de la collecte journalière de l’évolution de la constitution des traites de remboursement des crédits adossé à la tontine afin de garantir le remboursement en fin de période; la lutte contre le blanchiment de capitaux et le financement du terrorisme, etc.</p>
-
-                  <button @click="toggle" class="filled-button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Réduire</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12" x-data="dropdown">
-            <div class="row" x-show="! open">
-              <div class="col-12 col-md-6 order-1 order-md-1 border d-flex justify-content-center align-items-center">
-                <img src="{% static 'images/3_smart_collect.png' %}" class="img-fluid" alt="">
-              </div>
-              <div class="col-12 col-md-6 order-2 order-md-2" style="padding: 122px 79px !important; background-color: #2E3946;">
-                <div class="down-content">
-                  <h4 style="margin-bottom: 20px !important; font-weight: 700; font-size: 24px; line-height: 120%;color: #F3F3F4;">Smart Credit</h4>
-                  <p style="color:#F3F3F4;font-weight: 300;font-size: 16px !important;line-height: 140% !important;text-align: justify !important;letter-spacing: -0.02em !important; margin-bottom: 20px !important">SMART-CREDIT est une solution de finance digitale destinée à la gestion numérique du crédit. Elle permet de digitaliser le traitement de la demande de crédit ainsi que le suivi des remboursements et du portefeuille à risque. La robustesse de la solution est garantie par un mode « OFFLINE », qui lui permet de fonctionner avec fiabilité́ même sans connexion internet. SMART-CREDIT propose également des modules pour la digitalisation des crédits aux groupements.</p>
-                  <!--<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                    <div>
-
-                      <article id='tabs-1'>
-
-                        <p>De manière non exhaustive, la solution SMART-SAVING permet de gérer les différents types d’épargne (tontine, épargne à vue, dépôts à terme) ; de gérer efficacement le KYC (enrôlement, géolocalisation, assignation de cartes NFC en remplacement des livrets traditionnels, etc.) ; d’accéder à distance et faire le monitoring de toutes les opérations en temps réel ; de produire des reçus de paiement personnalisés et compréhensible par les analphabètes ; d’évaluer les performances de l’activité à partir de modules de Business Intelligence, etc.</p>
-                        <p>Au-delà d’être un produit d’appel pour l’institution financière, SMART-SAVING offre un grand nombre d’avantages notamment : la modernisation et la digitalisation de la collecte de l’épargne ; la traçabilité et la sécurisation de l’épargne ; a confidentialité des informations financières et d’identification des clients ; l’accroissement du volume d’épargne collecté et de la productivité de toute la chaine de valeur tout en gardant un même niveau de charges opérationnelles ; le suivi en temps réel lors de la collecte journalière de l’évolution de la constitution des traites de remboursement des crédits adossé à la tontine afin de garantir le remboursement en fin de période; la lutte contre le blanchiment de capitaux et le financement du terrorisme, etc.</p>
-                      </article>
+                        </div>
                     </div>
-                  </div>-->
-                  <button @click="toggle" class="filled-button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Voir Plus</button>
+
+                    <div class="row" x-show="open">
+                        <div class="col-12" style="padding: 45px 42px; background-color: #2E3946;">
+                            <h4 style="color:#F3F3F4;margin-bottom: 20px !important; font-weight: 700; font-size: 24px; line-height: 120%;">
+                                Smart Switch</h4>
+                            <p style="color:#F3F3F4;font-weight: 300;font-size: 16px !important;line-height: 140% !important;text-align: justify !important;letter-spacing: -0.02em !important; margin-bottom: 20px !important">
+                                C’est une passerelle permettant l’interopérabilité pair-à-pair entre notre plateforme et
+                                d'autres systèmes de paiement.
+                                <br>
+
+                                De manière non exhaustive, la plateforme SMART SWITCH permet d’effectuer des transferts
+                                de comptes bancaires vers des portemonnaies électroniques et vice versa; de faciliter
+                                l’adoption généralisée des paiements aux commerçants, etc.
+                                <br>
+
+                                SMART SWITCH offre un grand nombre dont la simplification de l’utilisation des moyens de
+                                paiement ; la contribution à l’avancée du Projet d’interopérabilité des services
+                                financiers numériques de la BCEAO.
+
+                            </p>
+
+                            <button href="" @click="toggle" class="filled-button" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Réduire
+                            </button>
+                        </div>
+                    </div>
+
                 </div>
 
-              </div>
+
             </div>
-
-            <div class="row" x-show="open">
-              <div class="col-12" style="padding: 45px 42px; background-color: #2E3946;">
-                <h4 style="color:#F3F3F4;margin-bottom: 20px !important; font-weight: 700; font-size: 24px; line-height: 120%;">Smart Saving</h4>
-                <p style="color:#F3F3F4;font-weight: 300;font-size: 16px !important;line-height: 140% !important;text-align: justify !important;letter-spacing: -0.02em !important; margin-bottom: 20px !important">SMART-CREDIT est une solution de finance digitale destinée à la gestion numérique du crédit. Elle permet de digitaliser le traitement de la demande de crédit ainsi que le suivi des remboursements et du portefeuille à risque. La robustesse de la solution est garantie par un mode « OFFLINE », qui lui permet de fonctionner avec fiabilité́ même sans connexion internet. SMART-CREDIT propose également des modules pour la digitalisation des crédits aux groupements.
-                  <br>
-
-                  De manière non exhaustive, la plateforme SMART-CREDIT permet d’enregistrer via un Terminal mobile ou une application client (mobile ou web), l’expression du besoin en crédit du client directement sur le terrain; de collecter, numériser et centraliser toutes les informations nécessaires (KYC, et tout autre documents du demandeur et de ses cautions) au traitement de la demande et à son analyse financière; de relever les coordonnées GPS et prise des photos du lieu d’activité du client et de son domicile afin de faciliter le recouvrement des impayés (utile en cas de changement de portefeuille client) ; de générer automatiquement les contrats personnalisés de crédit au format PDF prêt pour impression et signature ; d’évaluer les performances de l’activité, suivre les indicateurs du portefeuille à risque à partir de modules de Business Intelligence et produire les statistiques et rapports d’activité selon les canevas réglementaires.
-                  <br>
-
-                  SMART-CREDIT offre un grand nombre d’avantages notamment : toutes les opérations de demande, de suivi et de recouvrement du crédit se font directement sur le terrain, ce qui constitue un véritable gain d’opportunité pour les clients; l’archivage numérique et l’automatisation des dossiers de crédits ; le monitoring et génération d’alertes à temps du risque de non remboursement d’un crédit adossé à la tontine ; l’accroissement du volume de crédits octroyés et de la productivité de toute la chaine de valeur, tout en gardant un même niveau de charges opérationnelles et un faible risque de non remboursement.
-                </p>
-
-                <button href="" @click="toggle" class="filled-button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Réduire</button>
-              </div>
-            </div>
-
-          </div>
-
-
-
 
         </div>
-
-      </div>
     </div>
 {% endblock %}
 
 {% block custom_js %}
     <script>
-      document.addEventListener('alpine:init', () => {
-        Alpine.data('dropdown', () => ({
-          open: false,
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('dropdown', () => ({
+                open: false,
 
-          toggle() {
-            this.open = ! this.open
-          },
-        }))
-      })
+                toggle() {
+                    this.open = !this.open
+                },
+            }))
+        })
     </script>
 {% endblock %}
 

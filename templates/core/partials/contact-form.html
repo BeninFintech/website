@@ -1,0 +1,40 @@
+<form id="contact" hx-post="." method="post">
+    {% csrf_token %}
+    <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <fieldset>
+                <input name="name" type="text" class="form-control" id="name"
+                       placeholder="Votre Nom" required>
+            </fieldset>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <fieldset>
+                <input name="email" type="text" class="form-control" id="email"
+                       pattern="[^ @]*@[^ @]*" placeholder="Votre Email" required>
+            </fieldset>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <fieldset>
+                <input name="object" type="text" class="form-control" id="object"
+                       placeholder="Objet" required>
+            </fieldset>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <fieldset>
+                <input name="company" type="text" class="form-control" id="company"
+                       placeholder="Votre Entreprise" required>
+            </fieldset>
+        </div>
+        <div class="col-lg-12">
+            <fieldset>
+                                        <textarea name="message" rows="6" class="form-control" id="message"
+                                                  placeholder="Votre Message" required></textarea>
+            </fieldset>
+        </div>
+        <div class="col-lg-12">
+            <fieldset>
+                <button type="submit" id="form-submit" class="filled-button">Envoyer</button>
+            </fieldset>
+        </div>
+    </div>
+</form>

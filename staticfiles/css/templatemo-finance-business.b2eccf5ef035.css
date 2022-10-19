@@ -1130,7 +1130,7 @@ section .solutions-grid .btn-light:hover {
 }
 
 .about-section {
-    background: url(/static/images/more-info.jpg) no-repeat center;
+    background: url("/static/images/more-info.b1a0c1235709.jpg") no-repeat center;
     background-size: cover;
     min-height: 600px !important;
 }
